@@ -1,0 +1,31 @@
+# Binaries and build output
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+bin/
+dist/
+
+# Go workspace files
+go.work
+go.work.sum
+
+# Coverage and profiling
+coverage.out
+*.coverprofile
+*.prof
+
+# Editor and operating-system files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Documentation (keep the project README and the next-step prompt)
+*.md
+!README.md

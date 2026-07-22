@@ -1,0 +1,5 @@
+Commence une nouvelle séance d’apprentissage Go.
+
+Lis AGENTS.md, docs/LEARNING_PROGRAM.md et LEARNING_PROGRESS.md.
+
+Reprends exactement à ma prochaine étape et ne me donne pas la solution complète des exercices.
