@@ -3,5 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Bienvenue dans mon apprentissage Go!")
+	fmt.Println("Nom : Maxime")
+	fmt.Println("Objectif : apprendre le backend Go")
+	fmt.Println("Statut : phase 1")
 }
