@@ -26,13 +26,4 @@ Thumbs.db
 *.swp
 *.swo
 
-# Documentation kept under version control for the learning workflow
-*.md
-!README.md
-!AGENTS.md
-!LEARNING_PROGRESS.md
-!docs/LEARNING_PROGRAM.md
-!exercises/README.md
-!mini-projects/README.md
-!services/README.md
-!notes/README.md
+# Documentation is learning material and must be tracked.
