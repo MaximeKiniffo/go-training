@@ -18,7 +18,7 @@ Débutant — phase 1 en cours.
 - [x] Import d'un package standard — `fmt`.
 - [x] Affichage avec `fmt.Println`.
 - [x] Variables et constantes — `var`, `:=`, `const`.
-- [ ] Fonctions.
+- [x] Fonctions — paramètres, valeur de retour et appel d'une fonction.
 - [ ] Conditions.
 - [ ] Boucles `for`.
 
@@ -110,6 +110,7 @@ Aucune pour le moment.
 - Création du module `go-training` et lecture de `go.mod`.
 - Premier programme : `fundamentals/01-first-program/hello.go`, formaté avec `go fmt` et exécuté avec `go run`.
 - Variables et constantes : `fundamentals/02-variables/variables.go`, avec affichage d'un profil via `fmt.Println`.
+- Fonctions : `fundamentals/03-functions/profile.go`, avec une fonction `presentation` qui reçoit des paramètres et retourne une chaîne.
 
 ## Organisation du dépôt
 
@@ -117,4 +118,4 @@ Aucune pour le moment.
 
 ## Prochaine étape
 
-Phase 1 — découvrir les fonctions.
+Phase 1 — découvrir les conditions avec `if` et `else`.
