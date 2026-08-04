@@ -19,7 +19,7 @@ Débutant — phase 1 en cours.
 - [x] Affichage avec `fmt.Println`.
 - [x] Variables, constantes, types primitifs et inférence — `var`, `:=`, `const`.
 - [x] Fonctions — paramètres, valeur de retour et appel d'une fonction.
-- [ ] Retours multiples.
+- [x] Retours multiples.
 - [x] Conditions — `if` et `else`.
 - [ ] `switch`.
 - [x] Boucles `for`.
@@ -181,6 +181,7 @@ Aucune pour le moment.
 - Fonctions : `fundamentals/03-functions/profile.go`, avec une fonction `presentation` qui reçoit des paramètres et retourne une chaîne.
 - Conditions : `fundamentals/04-conditions/access.go`, avec un contrôle d'accès selon l'âge.
 - Boucles `for` : `fundamentals/05-loops/countdown.go`, avec un compte à rebours de 5 à 1.
+- Retours multiples : `fundamentals/06-multiple-returns/contact.go`, avec une fonction retournant un prénom et un âge.
 
 ## Organisation du dépôt
 
@@ -188,4 +189,4 @@ Aucune pour le moment.
 
 ## Prochaine étape
 
-Phase 1 — découvrir les retours multiples.
+Phase 1 — découvrir `switch`.
