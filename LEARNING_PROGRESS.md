@@ -17,85 +17,153 @@ Débutant — phase 1 en cours.
 - [x] Programme exécutable — `package main` et fonction `main`.
 - [x] Import d'un package standard — `fmt`.
 - [x] Affichage avec `fmt.Println`.
-- [x] Variables et constantes — `var`, `:=`, `const`.
+- [x] Variables, constantes, types primitifs et inférence — `var`, `:=`, `const`.
 - [x] Fonctions — paramètres, valeur de retour et appel d'une fonction.
+- [ ] Retours multiples.
 - [x] Conditions — `if` et `else`.
+- [ ] `switch`.
 - [x] Boucles `for`.
 
 ### Phase 2 — Collections et données
 
-- [ ] Tableaux et slices.
+- [ ] Tableaux.
+- [ ] Slices.
+- [ ] `append`.
+- [ ] `len` et `cap`.
+- [ ] Copie de slices.
 - [ ] Maps.
+- [ ] Boucles avec `range`.
 - [ ] Structs.
+- [ ] Tags JSON.
 
 ### Phase 3 — Organisation du code
 
-- [ ] Plusieurs fichiers dans un même package.
+- [ ] Plusieurs fichiers.
 - [ ] Packages locaux.
-- [ ] Visibilité des identifiants — majuscule/minuscule.
+- [ ] Modules Go.
+- [ ] `go.mod`.
+- [ ] Fonctions exportées.
+- [ ] Documentation.
 - [ ] Organisation simple d'un projet.
 
 ### Phase 4 — Méthodes et abstraction
 
-- [ ] Méthodes et receivers par valeur.
+- [ ] Méthodes.
+- [ ] Receivers par valeur.
 - [ ] Receivers par pointeur.
 - [ ] Composition.
-- [ ] Interfaces implicites et dépendances.
+- [ ] Interfaces.
+- [ ] Interfaces implicites.
+- [ ] Dépendances.
 
 ### Phase 5 — Pointeurs et mémoire
 
-- [ ] Adresses mémoire et opérateurs `&` et `*`.
-- [ ] Passage par valeur et modification d'une struct.
-- [ ] Pointeurs optionnels et valeurs `nil`.
+- [ ] Adresse mémoire.
+- [ ] Opérateurs `&` et `*`.
+- [ ] Passage par valeur.
+- [ ] Modification d'une struct.
+- [ ] Pointeurs optionnels.
+- [ ] Valeurs `nil`.
 
 ### Phase 6 — Gestion des erreurs
 
-- [ ] Type `error`, `errors.New` et `fmt.Errorf`.
-- [ ] Wrapping avec `%w`, `errors.Is` et `errors.As`.
-- [ ] Propagation et erreurs métier.
+- [ ] Type `error`.
+- [ ] `errors.New`.
+- [ ] `fmt.Errorf`.
+- [ ] `%w`.
+- [ ] `errors.Is`.
+- [ ] `errors.As`.
+- [ ] Propagation d'erreurs.
+- [ ] Erreurs métier.
+- [ ] Erreurs HTTP.
 
 ### Phase 7 — Tests
 
-- [ ] Package `testing` et premiers tests unitaires.
-- [ ] Tests pilotés par tableaux et sous-tests.
-- [ ] Couverture et tests des cas d'erreur.
+- [ ] Package `testing`.
+- [ ] Premiers tests unitaires.
+- [ ] Tests pilotés par tableaux.
+- [ ] Sous-tests avec `t.Run`.
+- [ ] Couverture.
+- [ ] Tests des cas d'erreur.
+- [ ] Commandes `go test` et `go test ./...`.
 
 ### Phase 8 — JSON, fichiers et HTTP
 
 - [ ] Lecture et écriture de fichiers.
 - [ ] Encodage et décodage JSON.
-- [ ] Serveur HTTP, handlers et routes avec `net/http`.
-- [ ] Paramètres, codes HTTP, headers et middlewares simples.
-- [ ] Clients HTTP, timeouts et contexte.
+- [ ] `net/http`.
+- [ ] Création d'un serveur.
+- [ ] Handlers.
+- [ ] Routes.
+- [ ] Paramètres.
+- [ ] Query parameters.
+- [ ] Codes HTTP.
+- [ ] Headers.
+- [ ] Middlewares simples.
+- [ ] Clients HTTP.
+- [ ] Timeouts.
+- [ ] Contexte.
 
 ### Phase 9 — Base de données
 
-- [ ] SQL avec `database/sql`.
-- [ ] Requêtes, paramètres, `Scan` et transactions.
-- [ ] Repository, migrations et gestion des erreurs SQL.
+- [ ] SQL avec Go.
+- [ ] Package `database/sql`.
+- [ ] Connexion.
+- [ ] Requêtes.
+- [ ] Paramètres.
+- [ ] `Scan`.
+- [ ] Transactions.
+- [ ] Repository.
+- [ ] Migrations.
+- [ ] Gestion des erreurs SQL.
 
 ### Phase 10 — Concurrence
 
-- [ ] Goroutines et channels.
-- [ ] Channels bufferisés et `select`.
-- [ ] `sync.WaitGroup`, mutex et race conditions.
-- [ ] Annulation, timeouts et `context.Context`.
+- [ ] Différence entre concurrence et parallélisme.
+- [ ] Goroutines.
+- [ ] Channels.
+- [ ] Channels bufferisés.
+- [ ] `select`.
+- [ ] `sync.WaitGroup`.
+- [ ] Mutex.
+- [ ] Race conditions.
+- [ ] Race detector.
+- [ ] Annulation.
+- [ ] Timeouts.
+- [ ] `context.Context`.
 
 ### Phase 11 — Service backend complet
 
-- [ ] API HTTP, handlers et couche métier.
-- [ ] Repository PostgreSQL, validations et erreurs métier.
-- [ ] Tests et configuration par variables d'environnement.
-- [ ] Logs structurés, endpoint de santé et arrêt propre.
+- [ ] API HTTP.
+- [ ] Handlers.
+- [ ] Couche métier.
+- [ ] Repository.
+- [ ] Base PostgreSQL.
+- [ ] Validations.
+- [ ] Erreurs métier.
+- [ ] Tests.
+- [ ] Configuration par variables d'environnement.
+- [ ] Logs structurés.
+- [ ] Endpoint de santé.
+- [ ] Arrêt propre du serveur.
 - [ ] Dockerfile.
 
 ### Phase 12 — Introduction aux microservices
 
 - [ ] Limites et responsabilités d'un service.
-- [ ] Communication HTTP entre services, contexte et timeouts.
-- [ ] Erreurs réseau, retries et idempotence.
-- [ ] Base de données par service et communication asynchrone.
-- [ ] Docker Compose, observabilité, gRPC et Protocol Buffers.
+- [ ] Communication HTTP entre deux services.
+- [ ] Clients HTTP.
+- [ ] Timeouts.
+- [ ] Propagation du contexte.
+- [ ] Erreurs réseau.
+- [ ] Retries.
+- [ ] Idempotence.
+- [ ] Base de données par service.
+- [ ] Événements.
+- [ ] Communication asynchrone.
+- [ ] Docker Compose.
+- [ ] Observabilité.
+- [ ] Introduction à gRPC et Protocol Buffers.
 
 ## Difficultés rencontrées
 
@@ -120,4 +188,4 @@ Aucune pour le moment.
 
 ## Prochaine étape
 
-Phase 2 — découvrir les tableaux et les slices.
+Phase 1 — découvrir les retours multiples.
