@@ -1,14 +1,16 @@
 package main
 
+import "fmt"
+
 func main() {
 	jour := "mercredi"
 
 	switch jour {
 	case "lundi", "mercredi":
-		println("Cours de Go")
+		fmt.Println("Cours de Go")
 	case "samedi":
-		println("Révision")
+		fmt.Println("Révision")
 	default:
-		println("Repos ou autre activité")
+		fmt.Println("Repos ou autre activité")
 	}
 }

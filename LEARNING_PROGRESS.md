@@ -2,7 +2,7 @@
 
 ## Niveau actuel
 
-Débutant — phase 1 en cours.
+Débutant — phase 1 terminée.
 
 ## Notions étudiées
 

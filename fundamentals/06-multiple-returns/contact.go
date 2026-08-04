@@ -2,11 +2,11 @@ package main
 
 import "fmt"
 
-func Contact() (string, int) {
+func contact() (string, int) {
 	return "Lina", 22
 }
 
 func main() {
-	name, age := Contact()
+	name, age := contact()
 	fmt.Printf(`%s a %d ans`, name, age)
 }
