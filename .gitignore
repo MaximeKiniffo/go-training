@@ -26,6 +26,4 @@ Thumbs.db
 *.swp
 *.swo
 
-# Documentation (keep the project README and the next-step prompt)
-*.md
-!README.md
+# Documentation is learning material and must be tracked.
