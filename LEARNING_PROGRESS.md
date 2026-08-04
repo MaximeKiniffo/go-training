@@ -21,7 +21,7 @@ Débutant — phase 1 en cours.
 - [x] Fonctions — paramètres, valeur de retour et appel d'une fonction.
 - [x] Retours multiples.
 - [x] Conditions — `if` et `else`.
-- [ ] `switch`.
+- [x] `switch`.
 - [x] Boucles `for`.
 
 ### Phase 2 — Collections et données
@@ -182,6 +182,7 @@ Aucune pour le moment.
 - Conditions : `fundamentals/04-conditions/access.go`, avec un contrôle d'accès selon l'âge.
 - Boucles `for` : `fundamentals/05-loops/countdown.go`, avec un compte à rebours de 5 à 1.
 - Retours multiples : `fundamentals/06-multiple-returns/contact.go`, avec une fonction retournant un prénom et un âge.
+- `switch` : `fundamentals/07-switch/activity.go`, avec le choix d'une activité selon le jour.
 
 ## Organisation du dépôt
 
@@ -189,4 +190,4 @@ Aucune pour le moment.
 
 ## Prochaine étape
 
-Phase 1 — découvrir `switch`.
+Phase 2 — découvrir les tableaux.
