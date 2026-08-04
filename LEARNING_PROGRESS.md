@@ -20,7 +20,7 @@ Débutant — phase 1 en cours.
 - [x] Variables et constantes — `var`, `:=`, `const`.
 - [x] Fonctions — paramètres, valeur de retour et appel d'une fonction.
 - [x] Conditions — `if` et `else`.
-- [ ] Boucles `for`.
+- [x] Boucles `for`.
 
 ### Phase 2 — Collections et données
 
@@ -112,6 +112,7 @@ Aucune pour le moment.
 - Variables et constantes : `fundamentals/02-variables/variables.go`, avec affichage d'un profil via `fmt.Println`.
 - Fonctions : `fundamentals/03-functions/profile.go`, avec une fonction `presentation` qui reçoit des paramètres et retourne une chaîne.
 - Conditions : `fundamentals/04-conditions/access.go`, avec un contrôle d'accès selon l'âge.
+- Boucles `for` : `fundamentals/05-loops/countdown.go`, avec un compte à rebours de 5 à 1.
 
 ## Organisation du dépôt
 
@@ -119,4 +120,4 @@ Aucune pour le moment.
 
 ## Prochaine étape
 
-Phase 1 — découvrir les boucles `for`.
+Phase 2 — découvrir les tableaux et les slices.
