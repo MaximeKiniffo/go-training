@@ -184,6 +184,16 @@ Aucune pour le moment.
 - Retours multiples : `fundamentals/06-multiple-returns/contact.go`, avec une fonction retournant un prénom et un âge.
 - `switch` : `fundamentals/07-switch/activity.go`, avec le choix d'une activité selon le jour.
 
+## Planning des mini-projets
+
+- [ ] Après la phase 7 : démarrer le projet 1, programme en ligne de commande en mémoire, dans `mini-projects/`.
+- [ ] Après la phase 8 : terminer le projet 1 avec la persistance dans un fichier JSON.
+- [ ] Phase 11 : réaliser le projet 2, API REST monolithique, dans `services/`.
+- [ ] Phase 12, après les appels HTTP inter-services : démarrer le projet 3, deux services.
+- [ ] Phase 12, après les événements et la communication asynchrone : démarrer le projet 4, service de notification.
+
+Règle de décision : lorsqu’un jalon est atteint, la section `Prochaine étape` doit indiquer explicitement le premier exercice du mini-projet concerné. Cette ligne reste la source de vérité pour démarrer une nouvelle séance.
+
 ## Organisation du dépôt
 
 - Architecture d’apprentissage appliquée : chaque exercice est conservé dans un dossier dédié et les fichiers Go ont un nom descriptif.
