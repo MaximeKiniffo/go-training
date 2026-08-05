@@ -26,7 +26,7 @@ Débutant — phase 1 terminée.
 
 ### Phase 2 — Collections et données
 
-- [ ] Tableaux.
+- [x] Tableaux.
 - [ ] Slices.
 - [ ] `append`.
 - [ ] `len` et `cap`.
@@ -183,6 +183,7 @@ Aucune pour le moment.
 - Boucles `for` : `fundamentals/05-loops/countdown.go`, avec un compte à rebours de 5 à 1.
 - Retours multiples : `fundamentals/06-multiple-returns/contact.go`, avec une fonction retournant un prénom et un âge.
 - `switch` : `fundamentals/07-switch/activity.go`, avec le choix d'une activité selon le jour.
+- Tableaux : `fundamentals/08-arrays/languages.go`, avec un tableau fixe de trois langages et l'accès à son premier et son dernier élément.
 
 ## Planning des mini-projets
 
@@ -200,4 +201,4 @@ Règle de décision : lorsqu’un jalon est atteint, la section `Prochaine étap
 
 ## Prochaine étape
 
-Phase 2 — découvrir les tableaux.
+Phase 2 — découvrir les slices.
