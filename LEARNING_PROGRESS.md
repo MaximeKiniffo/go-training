@@ -27,7 +27,7 @@ Débutant — phase 1 terminée.
 ### Phase 2 — Collections et données
 
 - [x] Tableaux.
-- [ ] Slices.
+- [x] Slices.
 - [ ] `append`.
 - [ ] `len` et `cap`.
 - [ ] Copie de slices.
@@ -184,6 +184,7 @@ Aucune pour le moment.
 - Retours multiples : `fundamentals/06-multiple-returns/contact.go`, avec une fonction retournant un prénom et un âge.
 - `switch` : `fundamentals/07-switch/activity.go`, avec le choix d'une activité selon le jour.
 - Tableaux : `fundamentals/08-arrays/languages.go`, avec un tableau fixe de trois langages et l'accès à son premier et son dernier élément.
+- Slices : `fundamentals/09-slices/skills.go`, avec une liste de compétences modifiable et son affichage.
 
 ## Planning des mini-projets
 
@@ -201,4 +202,4 @@ Règle de décision : lorsqu’un jalon est atteint, la section `Prochaine étap
 
 ## Prochaine étape
 
-Phase 2 — découvrir les slices.
+Phase 2 — découvrir `append` pour ajouter un élément à une slice.
