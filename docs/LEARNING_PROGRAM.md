@@ -466,6 +466,18 @@ Ajouter un service de notification recevant un événement lors de la création 
 
 L’objectif est de comprendre le principe, pas de reproduire une infrastructure d’entreprise complète.
 
+### Calendrier obligatoire des mini-projets
+
+Les mini-projets sont découpés en séances et ne constituent pas une exception à la règle : un chat ne traite qu’un exercice et une notion. Leurs jalons de démarrage sont les suivants :
+
+1. Après la phase 7, démarrer le **projet 1** dans `mini-projects/` : une première version en mémoire du programme en ligne de commande, utilisant seulement les notions déjà étudiées.
+2. Après la phase 8, reprendre et terminer le **projet 1** en ajoutant la persistance dans un fichier JSON. Ne pas introduire le JSON avant cette phase.
+3. La phase 11 correspond au **projet 2** : construire l’API REST monolithique progressivement dans `services/` et la considérer comme terminée uniquement lorsque tous les éléments de cette phase sont acquis.
+4. Pendant la phase 12, après avoir étudié les appels HTTP entre services, démarrer le **projet 3**. Ne pas introduire les événements à ce stade.
+5. Pendant la phase 12, après avoir étudié les événements et la communication asynchrone, démarrer le **projet 4**.
+
+Lorsqu’un jalon est atteint, inscrire explicitement le prochain exercice de mini-projet dans la section `Prochaine étape` de `LEARNING_PROGRESS.md`. Cette ligne est la source de vérité pour le prompt de nouvelle étape : elle prévaut sur ce calendrier général.
+
 ## Organisation du dépôt d’apprentissage
 
 L’architecture suivante est obligatoire dès qu’un exercice ou un projet est créé :

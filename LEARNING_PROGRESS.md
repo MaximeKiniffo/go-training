@@ -2,7 +2,7 @@
 
 ## Niveau actuel
 
-Débutant — phase 1 en cours.
+Débutant — phase 1 terminée.
 
 ## Notions étudiées
 
@@ -19,9 +19,9 @@ Débutant — phase 1 en cours.
 - [x] Affichage avec `fmt.Println`.
 - [x] Variables, constantes, types primitifs et inférence — `var`, `:=`, `const`.
 - [x] Fonctions — paramètres, valeur de retour et appel d'une fonction.
-- [ ] Retours multiples.
+- [x] Retours multiples.
 - [x] Conditions — `if` et `else`.
-- [ ] `switch`.
+- [x] `switch`.
 - [x] Boucles `for`.
 
 ### Phase 2 — Collections et données
@@ -181,6 +181,18 @@ Aucune pour le moment.
 - Fonctions : `fundamentals/03-functions/profile.go`, avec une fonction `presentation` qui reçoit des paramètres et retourne une chaîne.
 - Conditions : `fundamentals/04-conditions/access.go`, avec un contrôle d'accès selon l'âge.
 - Boucles `for` : `fundamentals/05-loops/countdown.go`, avec un compte à rebours de 5 à 1.
+- Retours multiples : `fundamentals/06-multiple-returns/contact.go`, avec une fonction retournant un prénom et un âge.
+- `switch` : `fundamentals/07-switch/activity.go`, avec le choix d'une activité selon le jour.
+
+## Planning des mini-projets
+
+- [ ] Après la phase 7 : démarrer le projet 1, programme en ligne de commande en mémoire, dans `mini-projects/`.
+- [ ] Après la phase 8 : terminer le projet 1 avec la persistance dans un fichier JSON.
+- [ ] Phase 11 : réaliser le projet 2, API REST monolithique, dans `services/`.
+- [ ] Phase 12, après les appels HTTP inter-services : démarrer le projet 3, deux services.
+- [ ] Phase 12, après les événements et la communication asynchrone : démarrer le projet 4, service de notification.
+
+Règle de décision : lorsqu’un jalon est atteint, la section `Prochaine étape` doit indiquer explicitement le premier exercice du mini-projet concerné. Cette ligne reste la source de vérité pour démarrer une nouvelle séance.
 
 ## Organisation du dépôt
 
@@ -188,4 +200,4 @@ Aucune pour le moment.
 
 ## Prochaine étape
 
-Phase 1 — découvrir les retours multiples.
+Phase 2 — découvrir les tableaux.
