@@ -29,7 +29,7 @@ Débutant — phase 1 terminée.
 - [x] Tableaux.
 - [x] Slices.
 - [x] `append`.
-- [ ] `len` et `cap`.
+- [x] `len` et `cap`.
 - [ ] Copie de slices.
 - [ ] Maps.
 - [ ] Boucles avec `range`.
@@ -186,6 +186,7 @@ Aucune pour le moment.
 - Tableaux : `fundamentals/08-arrays/languages.go`, avec un tableau fixe de trois langages et l'accès à son premier et son dernier élément.
 - Slices : `fundamentals/09-slices/skills.go`, avec une liste de compétences modifiable et son affichage.
 - `append` : `fundamentals/10-append/skills_append.go`, avec l’ajout de `"Go"` à une slice de langages.
+- `len` et `cap` : `fundamentals/11-len-cap/slice_capacity.go`, avec l’observation de la longueur et de la capacité lors d’ajouts successifs.
 
 ## Planning des mini-projets
 
@@ -203,4 +204,4 @@ Règle de décision : lorsqu’un jalon est atteint, la section `Prochaine étap
 
 ## Prochaine étape
 
-Phase 2 — découvrir `len` et `cap` pour observer la taille et la capacité d’une slice.
+Phase 2 — découvrir la copie de slices pour comprendre comment éviter de partager les mêmes données.
