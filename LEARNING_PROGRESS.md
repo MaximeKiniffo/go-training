@@ -31,7 +31,7 @@ Débutant — phase 1 terminée.
 - [x] `append`.
 - [x] `len` et `cap`.
 - [x] Copie de slices.
-- [ ] Maps.
+- [x] Maps.
 - [ ] Boucles avec `range`.
 - [ ] Structs.
 - [ ] Tags JSON.
@@ -188,6 +188,7 @@ Aucune pour le moment.
 - `append` : `fundamentals/10-append/skills_append.go`, avec l’ajout de `"Go"` à une slice de langages.
 - `len` et `cap` : `fundamentals/11-len-cap/slice_capacity.go`, avec l’observation de la longueur et de la capacité lors d’ajouts successifs.
 - Copie de slices : `fundamentals/12-slice-copy/independent_skills.go`, avec une copie indépendante modifiée sans altérer la slice originale.
+- Maps : `fundamentals/13-maps/profile_map.go`, avec un profil associant des clés à des valeurs et la mise à jour du langage.
 
 ## Planning des mini-projets
 
@@ -205,4 +206,4 @@ Règle de décision : lorsqu’un jalon est atteint, la section `Prochaine étap
 
 ## Prochaine étape
 
-Phase 2 — découvrir les maps pour associer des clés à des valeurs.
+Phase 2 — découvrir les boucles avec `range` pour parcourir des collections.
