@@ -33,7 +33,7 @@ Débutant — phase 1 terminée.
 - [x] Copie de slices.
 - [x] Maps.
 - [x] Boucles avec `range`.
-- [ ] Structs.
+- [x] Structs.
 - [ ] Tags JSON.
 
 ### Phase 3 — Organisation du code
@@ -190,6 +190,7 @@ Aucune pour le moment.
 - Copie de slices : `fundamentals/12-slice-copy/independent_skills.go`, avec une copie indépendante modifiée sans altérer la slice originale.
 - Maps : `fundamentals/13-maps/profile_map.go`, avec un profil associant des clés à des valeurs et la mise à jour du langage.
 - Boucles avec `range` : `fundamentals/14-range/languages_range.go`, avec le parcours d'une slice de langages et l'affichage de chaque index et valeur.
+- Structs : `fundamentals/15-structs/developer_profile.go`, avec un profil de développeur regroupant un nom, un langage principal et des années d'expérience.
 
 ## Planning des mini-projets
 
@@ -207,4 +208,4 @@ Règle de décision : lorsqu’un jalon est atteint, la section `Prochaine étap
 
 ## Prochaine étape
 
-Phase 2 — découvrir les structs pour modéliser des données regroupées.
+Phase 2 — découvrir les tags JSON associés aux champs d'une struct.
