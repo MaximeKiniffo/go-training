@@ -43,7 +43,7 @@ Débutant — phase 1 terminée.
 - [x] Modules Go.
 - [x] `go.mod`.
 - [x] Fonctions exportées.
-- [ ] Documentation.
+- [x] Documentation.
 - [ ] Organisation simple d'un projet.
 
 ### Phase 4 — Méthodes et abstraction
@@ -196,6 +196,7 @@ Aucune pour le moment.
 - Packages locaux : `fundamentals/18-local-packages/application.go` et `profile/profile.go`, avec l'import du package `profile` via le chemin du module `go-training`.
 - Modules Go et `go.mod` : compréhension du nom de module comme préfixe des imports locaux.
 - Fonctions exportées : `profile.Welcome`, appelée depuis `package main` ; une majuscule initiale rend la fonction accessible hors de son package.
+- Documentation GoDoc : commentaires placés au-dessus des fonctions exportées `Introduction` et `Welcome`, commençant par leur nom.
 
 ## Planning des mini-projets
 
@@ -213,4 +214,4 @@ Règle de décision : lorsqu’un jalon est atteint, la section `Prochaine étap
 
 ## Prochaine étape
 
-Phase 3 — découvrir la documentation Go : commenter une fonction exportée avec la convention GoDoc.
+Phase 3 — découvrir une organisation simple de projet Go : distinguer les responsabilités des packages existants.
