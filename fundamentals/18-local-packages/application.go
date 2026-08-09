@@ -7,4 +7,5 @@ import (
 
 func main() {
 	fmt.Println(profile.Introduction("Maxime", "Go"))
+	fmt.Println(profile.Welcome("Maxime"))
 }
