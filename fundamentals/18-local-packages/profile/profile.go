@@ -1,3 +1,4 @@
+// Package profile illustre un package local dont les fonctions exportées sont utilisables par d'autres packages.
 package profile
 
 // Introduction returns a string introducing the person with the given name and programming language.

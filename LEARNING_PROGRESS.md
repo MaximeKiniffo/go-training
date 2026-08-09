@@ -2,7 +2,7 @@
 
 ## Niveau actuel
 
-Débutant — phase 1 terminée.
+Débutant — phase 3 terminée.
 
 ## Notions étudiées
 
@@ -195,7 +195,7 @@ Aucune pour le moment.
 - Plusieurs fichiers : `fundamentals/17-multiple-files/presentation.go` et `application.go`, avec une fonction appelée depuis un autre fichier du même package `main`.
 - Packages locaux : `fundamentals/18-local-packages/application.go` et `profile/profile.go`, avec l'import du package `profile` via le chemin du module `go-training`.
 - Modules Go et `go.mod` : compréhension du nom de module comme préfixe des imports locaux.
-- Fonctions exportées : `profile.Welcome`, appelée depuis `package main` ; une majuscule initiale rend la fonction accessible hors de son package.
+- Fonctions exportées : `profile.Introduction` et `profile.Welcome`, appelées depuis `package main` ; une majuscule initiale rend une fonction accessible hors de son package. Cette notion a été abordée avec les packages locaux dans le même exercice.
 - Documentation GoDoc : commentaires placés au-dessus des fonctions exportées `Introduction` et `Welcome`, commençant par leur nom.
 - Organisation simple d'un projet : distinction entre le package `main`, qui appelle les packages, et le package `profile`, responsable des fonctionnalités liées au profil.
 
