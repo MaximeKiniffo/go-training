@@ -39,7 +39,7 @@ Débutant — phase 1 terminée.
 ### Phase 3 — Organisation du code
 
 - [x] Plusieurs fichiers d'un même package.
-- [ ] Packages locaux.
+- [x] Packages locaux.
 - [ ] Modules Go.
 - [ ] `go.mod`.
 - [ ] Fonctions exportées.
@@ -193,6 +193,7 @@ Aucune pour le moment.
 - Structs : `fundamentals/15-structs/developer_profile.go`, avec un profil de développeur regroupant un nom, un langage principal et des années d'expérience.
 - Tags JSON : `fundamentals/16-json-tags/developer_json_tags.go`, avec les noms JSON `name`, `main_language` et `years_of_experience` associés aux champs d'un profil de développeur.
 - Plusieurs fichiers : `fundamentals/17-multiple-files/presentation.go` et `application.go`, avec une fonction appelée depuis un autre fichier du même package `main`.
+- Packages locaux : `fundamentals/18-local-packages/application.go` et `profile/profile.go`, avec l'import du package `profile` via le chemin du module `go-training`.
 
 ## Planning des mini-projets
 
@@ -210,4 +211,4 @@ Règle de décision : lorsqu’un jalon est atteint, la section `Prochaine étap
 
 ## Prochaine étape
 
-Phase 3 — découvrir les packages locaux.
+Phase 3 — comprendre le module Go et le rôle de `go.mod` dans les imports locaux.
