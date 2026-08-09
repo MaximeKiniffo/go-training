@@ -48,7 +48,7 @@ Débutant — phase 3 terminée.
 
 ### Phase 4 — Méthodes et abstraction
 
-- [ ] Méthodes.
+- [x] Méthodes.
 - [ ] Receivers par valeur.
 - [ ] Receivers par pointeur.
 - [ ] Composition.
@@ -198,6 +198,7 @@ Aucune pour le moment.
 - Fonctions exportées : `profile.Introduction` et `profile.Welcome`, appelées depuis `package main` ; une majuscule initiale rend une fonction accessible hors de son package. Cette notion a été abordée avec les packages locaux dans le même exercice.
 - Documentation GoDoc : commentaires placés au-dessus des fonctions exportées `Introduction` et `Welcome`, commençant par leur nom.
 - Organisation simple d'un projet : distinction entre le package `main`, qui appelle les packages, et le package `profile`, responsable des fonctionnalités liées au profil.
+- Méthodes avec receiver par valeur : `fundamentals/19-methods/developer_method.go`, avec `Developer.Introduction()` appelée sur une valeur `Developer`.
 
 ## Planning des mini-projets
 
@@ -215,4 +216,4 @@ Règle de décision : lorsqu’un jalon est atteint, la section `Prochaine étap
 
 ## Prochaine étape
 
-Phase 4 — découvrir les méthodes : associer un comportement à une struct avec un receiver par valeur.
+Phase 4 — découvrir les receivers par valeur : comprendre pourquoi une méthode reçoit une copie de la struct.
