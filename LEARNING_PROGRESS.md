@@ -26,15 +26,15 @@ Débutant — phase 1 terminée.
 
 ### Phase 2 — Collections et données
 
-- [ ] Tableaux.
-- [ ] Slices.
-- [ ] `append`.
-- [ ] `len` et `cap`.
-- [ ] Copie de slices.
-- [ ] Maps.
-- [ ] Boucles avec `range`.
-- [ ] Structs.
-- [ ] Tags JSON.
+- [x] Tableaux.
+- [x] Slices.
+- [x] `append`.
+- [x] `len` et `cap`.
+- [x] Copie de slices.
+- [x] Maps.
+- [x] Boucles avec `range`.
+- [x] Structs.
+- [x] Tags JSON.
 
 ### Phase 3 — Organisation du code
 
@@ -183,6 +183,15 @@ Aucune pour le moment.
 - Boucles `for` : `fundamentals/05-loops/countdown.go`, avec un compte à rebours de 5 à 1.
 - Retours multiples : `fundamentals/06-multiple-returns/contact.go`, avec une fonction retournant un prénom et un âge.
 - `switch` : `fundamentals/07-switch/activity.go`, avec le choix d'une activité selon le jour.
+- Tableaux : `fundamentals/08-arrays/languages.go`, avec un tableau fixe de trois langages et l'accès à son premier et son dernier élément.
+- Slices : `fundamentals/09-slices/skills.go`, avec une liste de compétences modifiable et son affichage.
+- `append` : `fundamentals/10-append/skills_append.go`, avec l’ajout de `"Go"` à une slice de langages.
+- `len` et `cap` : `fundamentals/11-len-cap/slice_capacity.go`, avec l’observation de la longueur et de la capacité lors d’ajouts successifs.
+- Copie de slices : `fundamentals/12-slice-copy/independent_skills.go`, avec une copie indépendante modifiée sans altérer la slice originale.
+- Maps : `fundamentals/13-maps/profile_map.go`, avec un profil associant des clés à des valeurs et la mise à jour du langage.
+- Boucles avec `range` : `fundamentals/14-range/languages_range.go`, avec le parcours d'une slice de langages et l'affichage de chaque index et valeur.
+- Structs : `fundamentals/15-structs/developer_profile.go`, avec un profil de développeur regroupant un nom, un langage principal et des années d'expérience.
+- Tags JSON : `fundamentals/16-json-tags/developer_json_tags.go`, avec les noms JSON `name`, `main_language` et `years_of_experience` associés aux champs d'un profil de développeur.
 
 ## Planning des mini-projets
 
@@ -200,4 +209,4 @@ Règle de décision : lorsqu’un jalon est atteint, la section `Prochaine étap
 
 ## Prochaine étape
 
-Phase 2 — découvrir les tableaux.
+Phase 3 — découvrir l'organisation d'un programme Go sur plusieurs fichiers d'un même package.
