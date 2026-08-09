@@ -44,7 +44,7 @@ Débutant — phase 1 terminée.
 - [x] `go.mod`.
 - [x] Fonctions exportées.
 - [x] Documentation.
-- [ ] Organisation simple d'un projet.
+- [x] Organisation simple d'un projet — `package main` coordonne le programme et les packages locaux regroupent une responsabilité précise.
 
 ### Phase 4 — Méthodes et abstraction
 
@@ -197,6 +197,7 @@ Aucune pour le moment.
 - Modules Go et `go.mod` : compréhension du nom de module comme préfixe des imports locaux.
 - Fonctions exportées : `profile.Welcome`, appelée depuis `package main` ; une majuscule initiale rend la fonction accessible hors de son package.
 - Documentation GoDoc : commentaires placés au-dessus des fonctions exportées `Introduction` et `Welcome`, commençant par leur nom.
+- Organisation simple d'un projet : distinction entre le package `main`, qui appelle les packages, et le package `profile`, responsable des fonctionnalités liées au profil.
 
 ## Planning des mini-projets
 
@@ -214,4 +215,4 @@ Règle de décision : lorsqu’un jalon est atteint, la section `Prochaine étap
 
 ## Prochaine étape
 
-Phase 3 — découvrir une organisation simple de projet Go : distinguer les responsabilités des packages existants.
+Phase 4 — découvrir les méthodes : associer un comportement à une struct avec un receiver par valeur.
