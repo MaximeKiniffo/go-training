@@ -38,7 +38,7 @@ Débutant — phase 1 terminée.
 
 ### Phase 3 — Organisation du code
 
-- [ ] Plusieurs fichiers.
+- [x] Plusieurs fichiers d'un même package.
 - [ ] Packages locaux.
 - [ ] Modules Go.
 - [ ] `go.mod`.
@@ -192,6 +192,7 @@ Aucune pour le moment.
 - Boucles avec `range` : `fundamentals/14-range/languages_range.go`, avec le parcours d'une slice de langages et l'affichage de chaque index et valeur.
 - Structs : `fundamentals/15-structs/developer_profile.go`, avec un profil de développeur regroupant un nom, un langage principal et des années d'expérience.
 - Tags JSON : `fundamentals/16-json-tags/developer_json_tags.go`, avec les noms JSON `name`, `main_language` et `years_of_experience` associés aux champs d'un profil de développeur.
+- Plusieurs fichiers : `fundamentals/17-multiple-files/presentation.go` et `application.go`, avec une fonction appelée depuis un autre fichier du même package `main`.
 
 ## Planning des mini-projets
 
@@ -209,4 +210,4 @@ Règle de décision : lorsqu’un jalon est atteint, la section `Prochaine étap
 
 ## Prochaine étape
 
-Phase 3 — découvrir l'organisation d'un programme Go sur plusieurs fichiers d'un même package.
+Phase 3 — découvrir les packages locaux.
