@@ -49,7 +49,7 @@ Débutant — phase 3 terminée.
 ### Phase 4 — Méthodes et abstraction
 
 - [x] Méthodes.
-- [ ] Receivers par valeur.
+- [x] Receivers par valeur — une méthode reçoit une copie de la struct et ne modifie donc pas la valeur d'origine.
 - [ ] Receivers par pointeur.
 - [ ] Composition.
 - [ ] Interfaces.
@@ -199,6 +199,7 @@ Aucune pour le moment.
 - Documentation GoDoc : commentaires placés au-dessus des fonctions exportées `Introduction` et `Welcome`, commençant par leur nom.
 - Organisation simple d'un projet : distinction entre le package `main`, qui appelle les packages, et le package `profile`, responsable des fonctionnalités liées au profil.
 - Méthodes avec receiver par valeur : `fundamentals/19-methods/developer_method.go`, avec `Developer.Introduction()` appelée sur une valeur `Developer`.
+- Receivers par valeur : `fundamentals/20-value-receivers/developer_experience.go`, avec `Developer.GainExperience()` qui modifie seulement sa copie locale.
 
 ## Planning des mini-projets
 
@@ -216,4 +217,4 @@ Règle de décision : lorsqu’un jalon est atteint, la section `Prochaine étap
 
 ## Prochaine étape
 
-Phase 4 — découvrir les receivers par valeur : comprendre pourquoi une méthode reçoit une copie de la struct.
+Phase 4 — découvrir les receivers par pointeur : comprendre comment une méthode peut modifier la struct d'origine.
