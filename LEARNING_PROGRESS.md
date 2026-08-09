@@ -2,7 +2,7 @@
 
 ## Niveau actuel
 
-Débutant — phase 1 terminée.
+Débutant — phase 3 terminée.
 
 ## Notions étudiées
 
@@ -38,13 +38,13 @@ Débutant — phase 1 terminée.
 
 ### Phase 3 — Organisation du code
 
-- [ ] Plusieurs fichiers.
-- [ ] Packages locaux.
-- [ ] Modules Go.
-- [ ] `go.mod`.
-- [ ] Fonctions exportées.
-- [ ] Documentation.
-- [ ] Organisation simple d'un projet.
+- [x] Plusieurs fichiers d'un même package.
+- [x] Packages locaux.
+- [x] Modules Go.
+- [x] `go.mod`.
+- [x] Fonctions exportées.
+- [x] Documentation.
+- [x] Organisation simple d'un projet — `package main` coordonne le programme et les packages locaux regroupent une responsabilité précise.
 
 ### Phase 4 — Méthodes et abstraction
 
@@ -192,6 +192,12 @@ Aucune pour le moment.
 - Boucles avec `range` : `fundamentals/14-range/languages_range.go`, avec le parcours d'une slice de langages et l'affichage de chaque index et valeur.
 - Structs : `fundamentals/15-structs/developer_profile.go`, avec un profil de développeur regroupant un nom, un langage principal et des années d'expérience.
 - Tags JSON : `fundamentals/16-json-tags/developer_json_tags.go`, avec les noms JSON `name`, `main_language` et `years_of_experience` associés aux champs d'un profil de développeur.
+- Plusieurs fichiers : `fundamentals/17-multiple-files/presentation.go` et `application.go`, avec une fonction appelée depuis un autre fichier du même package `main`.
+- Packages locaux : `fundamentals/18-local-packages/application.go` et `profile/profile.go`, avec l'import du package `profile` via le chemin du module `go-training`.
+- Modules Go et `go.mod` : compréhension du nom de module comme préfixe des imports locaux.
+- Fonctions exportées : `profile.Introduction` et `profile.Welcome`, appelées depuis `package main` ; une majuscule initiale rend une fonction accessible hors de son package. Cette notion a été abordée avec les packages locaux dans le même exercice.
+- Documentation GoDoc : commentaires placés au-dessus des fonctions exportées `Introduction` et `Welcome`, commençant par leur nom.
+- Organisation simple d'un projet : distinction entre le package `main`, qui appelle les packages, et le package `profile`, responsable des fonctionnalités liées au profil.
 
 ## Planning des mini-projets
 
@@ -209,4 +215,4 @@ Règle de décision : lorsqu’un jalon est atteint, la section `Prochaine étap
 
 ## Prochaine étape
 
-Phase 3 — découvrir l'organisation d'un programme Go sur plusieurs fichiers d'un même package.
+Phase 4 — découvrir les méthodes : associer un comportement à une struct avec un receiver par valeur.
