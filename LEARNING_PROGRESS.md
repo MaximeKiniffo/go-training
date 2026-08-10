@@ -2,7 +2,7 @@
 
 ## Niveau actuel
 
-Débutant — phase 3 terminée.
+Débutant — phase 4 en cours.
 
 ## Notions étudiées
 
@@ -53,7 +53,7 @@ Débutant — phase 3 terminée.
 - [x] Receivers par pointeur — une méthode recevant un pointeur peut modifier la struct d'origine.
 - [x] Composition.
 - [x] Interfaces.
-- [ ] Interfaces implicites.
+- [x] Interfaces implicites — un type satisfait automatiquement une interface lorsqu'il possède toutes les méthodes attendues avec les signatures exactes.
 - [ ] Dépendances.
 
 ### Phase 5 — Pointeurs et mémoire
@@ -203,6 +203,7 @@ Aucune pour le moment.
 - Receivers par pointeur : `fundamentals/21-pointer-receivers/developer_promotion.go`, avec `Developer.Promote()` qui incrémente l'expérience de la struct d'origine.
 - Composition : `fundamentals/22-composition/developer_contact.go`, avec un `Developer` contenant un `Contact` pour regrouper des coordonnées liées.
 - Interfaces : `fundamentals/23-interfaces/presentable.go`, avec une interface `Presentable` utilisée par la fonction `afficher` pour accepter un `Developer` ou un `Project`.
+- Interfaces implicites : `fundamentals/24-implicit-interfaces/notification.go`, avec `Email` et `SMS` transmis à `sendNotification` grâce à leur méthode `Notify() string`.
 
 ## Planning des mini-projets
 
@@ -220,4 +221,4 @@ Règle de décision : lorsqu’un jalon est atteint, la section `Prochaine étap
 
 ## Prochaine étape
 
-Phase 4 — interfaces implicites : comprendre pourquoi un type satisfait automatiquement une interface lorsqu'il possède les méthodes attendues.
+Phase 4 — dépendances : comprendre comment une fonction ou une struct reçoit la collaboration dont elle a besoin, sans la créer elle-même.
