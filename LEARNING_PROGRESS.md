@@ -54,7 +54,7 @@ Débutant — phase 4 en cours.
 - [x] Composition.
 - [x] Interfaces.
 - [x] Interfaces implicites — un type satisfait automatiquement une interface lorsqu'il possède toutes les méthodes attendues avec les signatures exactes.
-- [ ] Dépendances.
+- [x] Dépendances — une struct reçoit la collaboration nécessaire via un champ plutôt que de créer elle-même une implémentation concrète.
 
 ### Phase 5 — Pointeurs et mémoire
 
@@ -204,6 +204,7 @@ Aucune pour le moment.
 - Composition : `fundamentals/22-composition/developer_contact.go`, avec un `Developer` contenant un `Contact` pour regrouper des coordonnées liées.
 - Interfaces : `fundamentals/23-interfaces/presentable.go`, avec une interface `Presentable` utilisée par la fonction `afficher` pour accepter un `Developer` ou un `Project`.
 - Interfaces implicites : `fundamentals/24-implicit-interfaces/notification.go`, avec `Email` et `SMS` transmis à `sendNotification` grâce à leur méthode `Notify() string`.
+- Dépendances : `fundamentals/25-dependencies/task_notification.go`, avec `TaskService` recevant un `Notifier` et restant indépendant de `ConsoleNotifier`.
 
 ## Planning des mini-projets
 
@@ -221,4 +222,4 @@ Règle de décision : lorsqu’un jalon est atteint, la section `Prochaine étap
 
 ## Prochaine étape
 
-Phase 4 — dépendances : comprendre comment une fonction ou une struct reçoit la collaboration dont elle a besoin, sans la créer elle-même.
+Phase 5 — adresse mémoire : comprendre qu'une variable occupe un emplacement en mémoire et qu'un pointeur peut contenir son adresse.
