@@ -52,7 +52,7 @@ Débutant — phase 3 terminée.
 - [x] Receivers par valeur — une méthode reçoit une copie de la struct et ne modifie donc pas la valeur d'origine.
 - [x] Receivers par pointeur — une méthode recevant un pointeur peut modifier la struct d'origine.
 - [x] Composition.
-- [ ] Interfaces.
+- [x] Interfaces.
 - [ ] Interfaces implicites.
 - [ ] Dépendances.
 
@@ -202,6 +202,7 @@ Aucune pour le moment.
 - Receivers par valeur : `fundamentals/20-value-receivers/developer_experience.go`, avec `Developer.GainExperience()` qui modifie seulement sa copie locale.
 - Receivers par pointeur : `fundamentals/21-pointer-receivers/developer_promotion.go`, avec `Developer.Promote()` qui incrémente l'expérience de la struct d'origine.
 - Composition : `fundamentals/22-composition/developer_contact.go`, avec un `Developer` contenant un `Contact` pour regrouper des coordonnées liées.
+- Interfaces : `fundamentals/23-interfaces/presentable.go`, avec une interface `Presentable` utilisée par la fonction `afficher` pour accepter un `Developer` ou un `Project`.
 
 ## Planning des mini-projets
 
@@ -219,4 +220,4 @@ Règle de décision : lorsqu’un jalon est atteint, la section `Prochaine étap
 
 ## Prochaine étape
 
-Phase 4 — découvrir les interfaces : définir un comportement commun pour plusieurs types, sans introduire d'héritage.
+Phase 4 — interfaces implicites : comprendre pourquoi un type satisfait automatiquement une interface lorsqu'il possède les méthodes attendues.
