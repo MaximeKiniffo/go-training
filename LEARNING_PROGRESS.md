@@ -2,7 +2,7 @@
 
 ## Niveau actuel
 
-Débutant — phase 4 en cours.
+Débutant — phase 5 en cours.
 
 ## Notions étudiées
 
@@ -59,7 +59,7 @@ Débutant — phase 4 en cours.
 ### Phase 5 — Pointeurs et mémoire
 
 - [x] Adresse mémoire — une variable occupe un emplacement en mémoire, dont l'adresse est obtenue avec `&`.
-- [ ] Opérateurs `&` et `*`.
+- [x] Opérateurs `&` et `*` — `&` obtient l'adresse d'une variable et `*` permet de lire ou modifier la valeur visée par un pointeur.
 - [ ] Passage par valeur.
 - [ ] Modification d'une struct.
 - [ ] Pointeurs optionnels.
@@ -207,6 +207,8 @@ Aucune pour le moment.
 - Dépendances : `fundamentals/25-dependencies/task_notification.go`, avec `TaskService` recevant un `Notifier` et restant indépendant de `ConsoleNotifier`.
 - Adresse mémoire : `fundamentals/26-memory-address/address.go`, avec l'affichage des valeurs `langage` et `yearsOfExperience` ainsi que de leurs adresses via `&`.
 
+- `fundamentals/27-pointer-operators/pointer_operators.go`, avec la lecture et la modification d'une variable via un pointeur.
+
 ## Planning des mini-projets
 
 - [ ] Après la phase 7 : démarrer le projet 1, programme en ligne de commande en mémoire, dans `mini-projects/`.
@@ -223,4 +225,4 @@ Règle de décision : lorsqu’un jalon est atteint, la section `Prochaine étap
 
 ## Prochaine étape
 
-Phase 5 — opérateurs `&` et `*` : comprendre que `&` obtient l'adresse d'une variable et que `*` permet d'accéder à la valeur visée par un pointeur.
+Phase 5 — passage par valeur : comprendre qu'une fonction reçoit une copie d'une valeur et que la modification de cette copie ne modifie pas la variable originale.
