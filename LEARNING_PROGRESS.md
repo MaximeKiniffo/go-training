@@ -58,7 +58,7 @@ Débutant — phase 4 en cours.
 
 ### Phase 5 — Pointeurs et mémoire
 
-- [ ] Adresse mémoire.
+- [x] Adresse mémoire — une variable occupe un emplacement en mémoire, dont l'adresse est obtenue avec `&`.
 - [ ] Opérateurs `&` et `*`.
 - [ ] Passage par valeur.
 - [ ] Modification d'une struct.
@@ -205,6 +205,7 @@ Aucune pour le moment.
 - Interfaces : `fundamentals/23-interfaces/presentable.go`, avec une interface `Presentable` utilisée par la fonction `afficher` pour accepter un `Developer` ou un `Project`.
 - Interfaces implicites : `fundamentals/24-implicit-interfaces/notification.go`, avec `Email` et `SMS` transmis à `sendNotification` grâce à leur méthode `Notify() string`.
 - Dépendances : `fundamentals/25-dependencies/task_notification.go`, avec `TaskService` recevant un `Notifier` et restant indépendant de `ConsoleNotifier`.
+- Adresse mémoire : `fundamentals/26-memory-address/address.go`, avec l'affichage des valeurs `langage` et `yearsOfExperience` ainsi que de leurs adresses via `&`.
 
 ## Planning des mini-projets
 
@@ -222,4 +223,4 @@ Règle de décision : lorsqu’un jalon est atteint, la section `Prochaine étap
 
 ## Prochaine étape
 
-Phase 5 — adresse mémoire : comprendre qu'une variable occupe un emplacement en mémoire et qu'un pointeur peut contenir son adresse.
+Phase 5 — opérateurs `&` et `*` : comprendre que `&` obtient l'adresse d'une variable et que `*` permet d'accéder à la valeur visée par un pointeur.
