@@ -61,7 +61,7 @@ Débutant — phase 5 en cours.
 - [x] Adresse mémoire — une variable occupe un emplacement en mémoire, dont l'adresse est obtenue avec `&`.
 - [x] Opérateurs `&` et `*` — `&` obtient l'adresse d'une variable et `*` permet de lire ou modifier la valeur visée par un pointeur.
 - [x] Passage par valeur — une fonction reçoit une copie d'une valeur et la modification de cette copie ne modifie pas la variable originale.
-- [ ] Modification d'une struct.
+- [x] Modification d'une struct — une struct passée par valeur est copiée ; un pointeur permet de modifier la struct originale.
 - [ ] Pointeurs optionnels.
 - [ ] Valeurs `nil`.
 
@@ -209,6 +209,7 @@ Aucune pour le moment.
 
 - `fundamentals/27-pointer-operators/pointer_operators.go`, avec la lecture et la modification d'une variable via un pointeur.
 - `fundamentals/28-pass-by-value/pass_by_value.go`, avec une fonction qui modifie une copie d'un score sans modifier la variable originale.
+- `fundamentals/29-struct-modification/profile.go`, avec la modification de l'expérience d'une struct `Developer` grâce à un pointeur.
 
 ## Planning des mini-projets
 
@@ -226,4 +227,4 @@ Règle de décision : lorsqu’un jalon est atteint, la section `Prochaine étap
 
 ## Prochaine étape
 
-Phase 5 — modification d'une struct : comprendre qu'une struct passée à une fonction est également copiée comme une valeur.
+Phase 5 — pointeurs optionnels : comprendre comment représenter une valeur éventuellement absente avec un pointeur `nil`.
