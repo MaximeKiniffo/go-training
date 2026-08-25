@@ -69,7 +69,7 @@ Débutant — phase 6 en cours.
 
 - [x] Type `error` — une fonction peut retourner une erreur comme valeur, et l'appelant la vérifie avec `err != nil`.
 - [x] `errors.New` — création d'une erreur simple avec un message et vérification de la valeur retournée avec `err != nil`.
-- [ ] `fmt.Errorf`.
+- [x] `fmt.Errorf` — création d'une erreur dont le message contient une valeur dynamique.
 - [ ] `%w`.
 - [ ] `errors.Is`.
 - [ ] `errors.As`.
@@ -213,6 +213,7 @@ Aucune pour le moment.
 - `fundamentals/30-optional-pointers/optional_profile.go`, avec une struct `Profile` dont le surnom peut être absent grâce à un pointeur `nil`.
 - `fundamentals/31-errors/score_parser.go`, avec une fonction `parseScore` retournant une erreur de conversion et sa vérification dans `main`.
 - `fundamentals/32-errors-new/age_validation.go`, avec une validation d'âge retournant une erreur créée avec `errors.New` lorsque l'âge est inférieur à 18 ans.
+- `fundamentals/33-fmt-error/score_validation.go`, avec une validation de score retournant une erreur créée avec `fmt.Errorf` et contenant la valeur invalide.
 
 ## Planning des mini-projets
 
@@ -230,4 +231,4 @@ Règle de décision : lorsqu’un jalon est atteint, la section `Prochaine étap
 
 ## Prochaine étape
 
-Phase 6 — `fmt.Errorf` : créer une erreur dont le message contient une valeur dynamique.
+Phase 6 — `%w` : conserver une erreur d'origine dans une erreur contextualisée.
