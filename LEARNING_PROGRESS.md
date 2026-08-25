@@ -67,7 +67,7 @@ Débutant — phase 6 en cours.
 
 ### Phase 6 — Gestion des erreurs
 
-- [ ] Type `error`.
+- [x] Type `error` — une fonction peut retourner une erreur comme valeur, et l'appelant la vérifie avec `err != nil`.
 - [ ] `errors.New`.
 - [ ] `fmt.Errorf`.
 - [ ] `%w`.
@@ -211,6 +211,7 @@ Aucune pour le moment.
 - `fundamentals/28-pass-by-value/pass_by_value.go`, avec une fonction qui modifie une copie d'un score sans modifier la variable originale.
 - `fundamentals/29-struct-modification/profile.go`, avec la modification de l'expérience d'une struct `Developer` grâce à un pointeur.
 - `fundamentals/30-optional-pointers/optional_profile.go`, avec une struct `Profile` dont le surnom peut être absent grâce à un pointeur `nil`.
+- `fundamentals/31-errors/score_parser.go`, avec une fonction `parseScore` retournant une erreur de conversion et sa vérification dans `main`.
 
 ## Planning des mini-projets
 
@@ -228,4 +229,4 @@ Règle de décision : lorsqu’un jalon est atteint, la section `Prochaine étap
 
 ## Prochaine étape
 
-Phase 6 — type `error` : comprendre comment une fonction retourne et exploite une erreur.
+Phase 6 — `errors.New` : créer une erreur simple avec la bibliothèque standard.
