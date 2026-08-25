@@ -70,7 +70,7 @@ Débutant — phase 6 en cours.
 - [x] Type `error` — une fonction peut retourner une erreur comme valeur, et l'appelant la vérifie avec `err != nil`.
 - [x] `errors.New` — création d'une erreur simple avec un message et vérification de la valeur retournée avec `err != nil`.
 - [x] `fmt.Errorf` — création d'une erreur dont le message contient une valeur dynamique.
-- [ ] `%w`.
+- [x] `%w` — contextualiser une erreur avec `fmt.Errorf` tout en conservant l'erreur d'origine.
 - [ ] `errors.Is`.
 - [ ] `errors.As`.
 - [ ] Propagation d'erreurs.
@@ -214,6 +214,7 @@ Aucune pour le moment.
 - `fundamentals/31-errors/score_parser.go`, avec une fonction `parseScore` retournant une erreur de conversion et sa vérification dans `main`.
 - `fundamentals/32-errors-new/age_validation.go`, avec une validation d'âge retournant une erreur créée avec `errors.New` lorsque l'âge est inférieur à 18 ans.
 - `fundamentals/33-fmt-error/score_validation.go`, avec une validation de score retournant une erreur créée avec `fmt.Errorf` et contenant la valeur invalide.
+- `fundamentals/34-error-wrapping/score_loading.go`, avec une erreur d'origine contextualisée grâce à `fmt.Errorf` et `%w`.
 
 ## Planning des mini-projets
 
@@ -231,4 +232,4 @@ Règle de décision : lorsqu’un jalon est atteint, la section `Prochaine étap
 
 ## Prochaine étape
 
-Phase 6 — `%w` : conserver une erreur d'origine dans une erreur contextualisée.
+Phase 6 — `errors.Is` : vérifier si une erreur correspond à une erreur d'origine.
