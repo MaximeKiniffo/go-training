@@ -2,7 +2,7 @@
 
 ## Niveau actuel
 
-Débutant — phase 5 en cours.
+Débutant — phase 6 en cours.
 
 ## Notions étudiées
 
@@ -62,8 +62,8 @@ Débutant — phase 5 en cours.
 - [x] Opérateurs `&` et `*` — `&` obtient l'adresse d'une variable et `*` permet de lire ou modifier la valeur visée par un pointeur.
 - [x] Passage par valeur — une fonction reçoit une copie d'une valeur et la modification de cette copie ne modifie pas la variable originale.
 - [x] Modification d'une struct — une struct passée par valeur est copiée ; un pointeur permet de modifier la struct originale.
-- [ ] Pointeurs optionnels.
-- [ ] Valeurs `nil`.
+- [x] Pointeurs optionnels — un pointeur permet de représenter une valeur qui peut être absente.
+- [x] Valeurs `nil` — `nil` indique qu'un pointeur ne référence aucune valeur et doit être vérifié avant déréférencement.
 
 ### Phase 6 — Gestion des erreurs
 
@@ -210,6 +210,7 @@ Aucune pour le moment.
 - `fundamentals/27-pointer-operators/pointer_operators.go`, avec la lecture et la modification d'une variable via un pointeur.
 - `fundamentals/28-pass-by-value/pass_by_value.go`, avec une fonction qui modifie une copie d'un score sans modifier la variable originale.
 - `fundamentals/29-struct-modification/profile.go`, avec la modification de l'expérience d'une struct `Developer` grâce à un pointeur.
+- `fundamentals/30-optional-pointers/optional_profile.go`, avec une struct `Profile` dont le surnom peut être absent grâce à un pointeur `nil`.
 
 ## Planning des mini-projets
 
@@ -227,4 +228,4 @@ Règle de décision : lorsqu’un jalon est atteint, la section `Prochaine étap
 
 ## Prochaine étape
 
-Phase 5 — pointeurs optionnels : comprendre comment représenter une valeur éventuellement absente avec un pointeur `nil`.
+Phase 6 — type `error` : comprendre comment une fonction retourne et exploite une erreur.
