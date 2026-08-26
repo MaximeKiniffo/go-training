@@ -71,7 +71,7 @@ Débutant — phase 6 en cours.
 - [x] `errors.New` — création d'une erreur simple avec un message et vérification de la valeur retournée avec `err != nil`.
 - [x] `fmt.Errorf` — création d'une erreur dont le message contient une valeur dynamique.
 - [x] `%w` — contextualiser une erreur avec `fmt.Errorf` tout en conservant l'erreur d'origine.
-- [ ] `errors.Is`.
+- [x] `errors.Is` — vérifier si une erreur correspond à une erreur d'origine, même lorsqu'elle est enveloppée avec `%w`.
 - [ ] `errors.As`.
 - [ ] Propagation d'erreurs.
 - [ ] Erreurs métier.
@@ -215,6 +215,7 @@ Aucune pour le moment.
 - `fundamentals/32-errors-new/age_validation.go`, avec une validation d'âge retournant une erreur créée avec `errors.New` lorsque l'âge est inférieur à 18 ans.
 - `fundamentals/33-fmt-error/score_validation.go`, avec une validation de score retournant une erreur créée avec `fmt.Errorf` et contenant la valeur invalide.
 - `fundamentals/34-error-wrapping/score_loading.go`, avec une erreur d'origine contextualisée grâce à `fmt.Errorf` et `%w`.
+- `fundamentals/35-errors-is/score_loading.go`, avec une erreur sentinelle détectée grâce à `errors.Is` malgré son enveloppage avec `%w`.
 
 ## Planning des mini-projets
 
@@ -232,4 +233,4 @@ Règle de décision : lorsqu’un jalon est atteint, la section `Prochaine étap
 
 ## Prochaine étape
 
-Phase 6 — `errors.Is` : vérifier si une erreur correspond à une erreur d'origine.
+Phase 6 — `errors.As` : récupérer une erreur d'un type précis dans une chaîne d'erreurs.

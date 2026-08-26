@@ -124,6 +124,24 @@ Chaque exercice doit contenir :
 
 Ne donne pas immédiatement la solution.
 
+### Exigences de compréhension et de concrétude
+
+Un exercice ne doit pas seulement vérifier que la syntaxe compile. Il doit montrer pourquoi la notion est utile dans un programme réel.
+
+Pour chaque exercice :
+
+- présente d’abord le problème concret que le programme doit résoudre ;
+- explique ce que la nouvelle notion permet de faire et ce qui serait plus difficile sans elle ;
+- donne une réaction ou une décision différente pour chaque cas important ;
+- évite les branches qui affichent deux formulations différentes du même message sans comportement différent ;
+- distingue clairement les données internes du programme, les diagnostics techniques et les messages destinés à l’utilisateur ;
+- fournis au moins un cas normal et un cas limite ou en erreur lorsque la notion s’y prête ;
+- fais valider le raisonnement et le comportement, pas uniquement le texte exact de la sortie.
+
+Par exemple, pour `errors.Is`, ne demande pas seulement d’afficher deux messages liés à un score introuvable. Utilise plutôt deux comportements : si le score est absent, proposer d’en créer un ; si le stockage est indisponible, signaler qu’il faut réessayer. L’exercice doit ainsi rendre visible la décision prise grâce à `errors.Is`.
+
+Avant de commencer le code, vérifie que je peux répondre à ces deux questions : « Quel problème ce programme résout-il ? » et « Que doit-il faire différemment selon le résultat ? »
+
 ### 5. Correction
 
 Lorsque je fournis mon code :
@@ -135,7 +153,8 @@ Lorsque je fournis mon code :
 5. distingue les corrections indispensables des améliorations facultatives ;
 6. donne-moi d’abord des pistes ;
 7. laisse-moi essayer de corriger ;
-8. ne fournis la solution complète que lorsque je la demande explicitement ou après plusieurs tentatives infructueuses.
+8. demande-moi d’expliquer le rôle des branches importantes lorsque le code fonctionne mais que la compréhension n’est pas encore claire ;
+9. ne fournis la solution complète que lorsque je la demande explicitement ou après plusieurs tentatives infructueuses.
 
 ## Système d’indices
 
