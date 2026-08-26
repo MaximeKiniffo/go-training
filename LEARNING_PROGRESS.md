@@ -72,7 +72,7 @@ Débutant — phase 6 en cours.
 - [x] `fmt.Errorf` — création d'une erreur dont le message contient une valeur dynamique.
 - [x] `%w` — contextualiser une erreur avec `fmt.Errorf` tout en conservant l'erreur d'origine.
 - [x] `errors.Is` — vérifier si une erreur correspond à une erreur d'origine, même lorsqu'elle est enveloppée avec `%w`.
-- [ ] `errors.As`.
+- [x] `errors.As` — récupérer une erreur d'un type précis dans une chaîne d'erreurs et utiliser ses données.
 - [ ] Propagation d'erreurs.
 - [ ] Erreurs métier.
 - [ ] Erreurs HTTP.
@@ -216,6 +216,7 @@ Aucune pour le moment.
 - `fundamentals/33-fmt-error/score_validation.go`, avec une validation de score retournant une erreur créée avec `fmt.Errorf` et contenant la valeur invalide.
 - `fundamentals/34-error-wrapping/score_loading.go`, avec une erreur d'origine contextualisée grâce à `fmt.Errorf` et `%w`.
 - `fundamentals/35-errors-is/score_loading.go`, avec une erreur sentinelle détectée grâce à `errors.Is` malgré son enveloppage avec `%w`.
+- `fundamentals/36-errors-as/score_validation_details.go`, avec une erreur `ScoreRangeError` récupérée dans une chaîne d'erreurs grâce à `errors.As` afin de distinguer un score trop bas d'un score trop haut.
 
 ## Planning des mini-projets
 
@@ -233,4 +234,4 @@ Règle de décision : lorsqu’un jalon est atteint, la section `Prochaine étap
 
 ## Prochaine étape
 
-Phase 6 — `errors.As` : récupérer une erreur d'un type précis dans une chaîne d'erreurs.
+Phase 6 — la propagation d'erreurs : transmettre une erreur retournée par une fonction à son appelant.
