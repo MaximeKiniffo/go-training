@@ -73,7 +73,7 @@ Débutant — phase 6 en cours.
 - [x] `%w` — contextualiser une erreur avec `fmt.Errorf` tout en conservant l'erreur d'origine.
 - [x] `errors.Is` — vérifier si une erreur correspond à une erreur d'origine, même lorsqu'elle est enveloppée avec `%w`.
 - [x] `errors.As` — récupérer une erreur d'un type précis dans une chaîne d'erreurs et utiliser ses données.
-- [ ] Propagation d'erreurs.
+- [x] Propagation d'erreurs — une fonction intermédiaire peut transmettre une erreur reçue à son appelant avec `return err`.
 - [ ] Erreurs métier.
 - [ ] Erreurs HTTP.
 
@@ -168,6 +168,7 @@ Débutant — phase 6 en cours.
 ## Difficultés rencontrées
 
 - La commande `go` n'était pas disponible dans une fenêtre PowerShell ouverte avant la mise à jour du `PATH`. Résolu en ouvrant une nouvelle fenêtre.
+- Difficulté importante pendant l'exercice de propagation d'erreurs : l'énoncé a d'abord été mal lu, ce qui a inversé le rôle de la chaîne d'entrée et du nombre converti (`string`/`int`). Le suivi du cheminement de `err` et des branches de l'algorithme a ensuite nécessité plusieurs indices.
 
 ## Erreurs récurrentes
 
@@ -217,6 +218,7 @@ Aucune pour le moment.
 - `fundamentals/34-error-wrapping/score_loading.go`, avec une erreur d'origine contextualisée grâce à `fmt.Errorf` et `%w`.
 - `fundamentals/35-errors-is/score_loading.go`, avec une erreur sentinelle détectée grâce à `errors.Is` malgré son enveloppage avec `%w`.
 - `fundamentals/36-errors-as/score_validation_details.go`, avec une erreur `ScoreRangeError` récupérée dans une chaîne d'erreurs grâce à `errors.As` afin de distinguer un score trop bas d'un score trop haut.
+- `fundamentals/37-error-propagation/score_propagation.go`, avec la propagation d'une erreur de conversion à travers une fonction intermédiaire jusqu'à `main`.
 
 ## Planning des mini-projets
 
@@ -234,4 +236,4 @@ Règle de décision : lorsqu’un jalon est atteint, la section `Prochaine étap
 
 ## Prochaine étape
 
-Phase 6 — la propagation d'erreurs : transmettre une erreur retournée par une fonction à son appelant.
+Phase 6 — les erreurs métier : représenter une situation métier invalide avec une erreur explicite.

@@ -40,11 +40,18 @@ Pour chaque nouvelle notion :
 1. expliquer simplement le concept ;
 2. montrer un exemple minimal ;
 3. faire une comparaison avec JavaScript ou TypeScript lorsque cela aide ;
-4. poser une courte question de compréhension ;
-5. proposer un exercice ;
-6. attendre ma tentative avant de donner une solution complète.
+4. proposer un exercice ;
+5. attendre ma tentative avant de donner une solution complète.
 
 Ne jamais générer automatiquement la solution complète d’un exercice sauf demande explicite.
+
+Pour un exercice, avant la tentative de l’apprenant, fournir uniquement l’objectif,
+les fonctionnalités attendues, les contraintes, les exemples d’entrée et de sortie,
+les fichiers concernés, les commandes et les critères de validation. Ne pas fournir
+de code de départ, de squelette, d’imports, de signatures de fonctions, de TODO ou
+d’implémentation partielle, sauf si l’apprenant demande explicitement une structure
+ou un indice ciblé. Un exemple de code utilisé pour expliquer une notion doit être
+distinct de l’exercice et ne doit pas servir de base directement copiable.
 
 Utiliser trois niveaux d’indices :
 
