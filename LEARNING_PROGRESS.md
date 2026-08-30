@@ -219,6 +219,7 @@ Aucune pour le moment.
 - `fundamentals/35-errors-is/score_loading.go`, avec une erreur sentinelle détectée grâce à `errors.Is` malgré son enveloppage avec `%w`.
 - `fundamentals/36-errors-as/score_validation_details.go`, avec une erreur `ScoreRangeError` récupérée dans une chaîne d'erreurs grâce à `errors.As` afin de distinguer un score trop bas d'un score trop haut.
 - `fundamentals/37-error-propagation/score_propagation.go`, avec la propagation d'une erreur de conversion à travers une fonction intermédiaire jusqu'à `main`.
+- `exercises/01-error-propagation-report/response_report.go`, avec la propagation d'une erreur lorsqu'une liste de mesures est vide, à travers une fonction intermédiaire jusqu'à la fonction d'affichage.
 
 ## Planning des mini-projets
 
