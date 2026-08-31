@@ -82,6 +82,8 @@ go-training/
 - Chaque notion fondamentale est conservée dans son propre dossier, par exemple `fundamentals/02-variables/variables.go`.
 - Le nom d’un fichier source doit décrire son sujet ; ne pas utiliser `main.go` par défaut pour les exercices.
 - Un exercice exécutable peut utiliser `package main` et `func main`, même si son fichier porte un nom descriptif.
+- L’exercice principal qui accompagne une notion de cours doit être placé dans `fundamentals/NN-sujet/`.
+- Le dossier `exercises/` est réservé aux exercices complémentaires et aux évaluations courtes. Ils sont proposés uniquement à la demande de l’apprenant ou lorsque le tuteur estime qu’une difficulté rencontrée justifie un renforcement.
 - Ne jamais remplacer ni déplacer silencieusement un exercice terminé : chaque exercice reste disponible pour révision.
 - Avant de créer un exercice, annoncer son emplacement et son rôle.
 

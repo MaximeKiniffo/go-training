@@ -234,6 +234,8 @@ Règle de décision : lorsqu’un jalon est atteint, la section `Prochaine étap
 ## Organisation du dépôt
 
 - Architecture d’apprentissage appliquée : chaque exercice est conservé dans un dossier dédié et les fichiers Go ont un nom descriptif.
+- L’exercice principal d’une notion est conservé dans `fundamentals/NN-sujet/`.
+- Le dossier `exercises/` est réservé aux exercices complémentaires et aux évaluations courtes, proposés à la demande de l’apprenant ou lorsqu’une difficulté justifie un renforcement.
 
 ## Prochaine étape
 

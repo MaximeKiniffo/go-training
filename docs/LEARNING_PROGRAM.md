@@ -517,6 +517,8 @@ Règles d’application pour les assistants :
 - ne pas placer de programme d’exercice Go à la racine du dépôt ;
 - conserver chaque exercice terminé dans son propre dossier afin de pouvoir le relire et l’exécuter ultérieurement ;
 - placer une notion fondamentale dans `fundamentals/NN-sujet/`, par exemple `fundamentals/02-variables/variables.go` ;
+- placer l’exercice principal de chaque notion étudiée dans le dossier `fundamentals/NN-sujet/` correspondant ;
+- réserver `exercises/` aux exercices complémentaires et aux évaluations courtes, proposés à la demande de l’apprenant ou lorsqu’une difficulté nécessite un renforcement ;
 - donner aux fichiers Go un nom descriptif du sujet ; `main.go` n’est pas le nom par défaut des exercices ;
 - un fichier comme `variables.go` peut tout de même contenir `package main` et `func main` lorsqu’il représente un programme exécutable ;
 - annoncer à l’avance l’emplacement et le rôle de chaque fichier créé ou déplacé ;
