@@ -43,6 +43,8 @@ Pour chaque nouvelle notion :
 4. proposer un exercice ;
 5. attendre ma tentative avant de donner une solution complète.
 
+Un exemple minimal doit être le plus petit exemple complet permettant de comprendre la notion : il doit être exécutable tel quel, contenir le contexte nécessaire (package, imports et point d’entrée si nécessaire), montrer le chemin principal de l’utilisation et produire un résultat observable. « Minimal » signifie réduire le scénario, pas supprimer les éléments indispensables ni fournir un fragment isolé. Un extrait non exécutable doit être présenté explicitement comme un extrait ciblé, jamais comme l’exemple minimal.
+
 Ne jamais générer automatiquement la solution complète d’un exercice sauf demande explicite.
 
 Pour un exercice, avant la tentative de l’apprenant, fournir uniquement l’objectif,

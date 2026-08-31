@@ -96,6 +96,8 @@ Explique chaque partie importante du code.
 
 Ne montre pas une architecture complexe pour expliquer une notion simple.
 
+Un exemple minimal doit être complet et exécutable tel quel : inclure le package, les imports nécessaires, le point d’entrée lorsque le programme en a besoin, l’appel de la notion étudiée et un résultat observable. Il doit montrer le chemin principal de bout en bout. « Minimal » signifie utiliser le plus petit scénario utile, et non supprimer le contexte indispensable ou présenter un fragment isolé. Tout extrait non exécutable doit être annoncé comme un extrait ciblé et ne remplace pas l’exemple minimal.
+
 ### 3. Vérification
 
 Pose-moi une courte question de compréhension.
