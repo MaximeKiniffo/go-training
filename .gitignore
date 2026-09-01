@@ -26,4 +26,9 @@ Thumbs.db
 *.swp
 *.swo
 
+# Obsidian : état local de l’interface
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/graph.json
+
 # Documentation is learning material and must be tracked.

@@ -101,3 +101,28 @@ Après chaque modification pertinente, exécuter lorsque cela est possible :
 go fmt ./...
 go vet ./...
 go test ./...
+```
+
+## Synchronisation Obsidian — obligatoire
+
+À la fin de chaque séance d’apprentissage, synchroniser les notes Obsidian dans
+`notes/`. Lorsque l’exercice est réussi, effectuer cette synchronisation en même
+temps que la mise à jour de `LEARNING_PROGRESS.md` :
+
+1. mettre à jour `notes/00 - Tableau de bord.md` avec le niveau, la dernière notion
+   acquise et la notion en cours ;
+2. compléter ou créer la fiche de la notion réellement étudiée avec les idées clés,
+   les pièges et le lien vers l’exercice concerné ;
+3. mettre à jour `notes/07 - Exercices terminés.md` uniquement lorsque l’exercice est
+   effectivement terminé ;
+4. ajouter dans `notes/Erreurs et pièges.md` seulement les confusions ou erreurs qui
+   méritent une révision ultérieure ;
+5. ajuster `notes/À revoir.md` avec au maximum trois priorités de révision.
+
+Ne jamais marquer une notion ou un exercice comme acquis dans Obsidian avant sa
+réussite. Ne pas documenter en détail une notion future ni fournir dans les notes la
+solution complète d’un exercice encore en cours.
+
+Si une séance se termine avant la réussite de l’exercice, mettre à jour uniquement
+l’état « en cours », les points réellement compris et les difficultés rencontrées ;
+ne pas faire avancer la prochaine étape.
