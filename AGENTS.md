@@ -113,7 +113,7 @@ temps que la mise à jour de `LEARNING_PROGRESS.md` :
    acquise et la notion en cours ;
 2. compléter ou créer la fiche de la notion réellement étudiée avec les idées clés,
    les pièges et le lien vers l’exercice concerné ;
-3. mettre à jour `notes/07 - Exercices terminés.md` uniquement lorsque l’exercice est
+3. mettre à jour `notes/Exercices terminés.md` uniquement lorsque l’exercice est
    effectivement terminé ;
 4. ajouter dans `notes/Erreurs et pièges.md` seulement les confusions ou erreurs qui
    méritent une révision ultérieure ;
