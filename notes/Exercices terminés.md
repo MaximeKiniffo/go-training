@@ -142,6 +142,10 @@ le code correspondant à une fiche de notion.
 
 [optional_profile.go](../fundamentals/30-optional-pointers/optional_profile.go) — surnom éventuellement absent.
 
+### Exercice complémentaire — Pointeurs et adresse mémoire
+
+[quota.go](../exercises/02-pointers-memory-address/quota.go) — modification d'un quota via un pointeur, décrémentation d'un compteur transmis par pointeur et observation de la même adresse mémoire avant et après les appels.
+
 ## Phase 6 — Gestion des erreurs
 
 ### 31 — Type `error`

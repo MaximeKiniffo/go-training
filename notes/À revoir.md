@@ -2,7 +2,7 @@
 
 ## Priorité actuelle
 
-- [ ] Expliquer le trajet de `err` dans un programme à trois fonctions.
+- [ ] Distinguer une adresse, un pointeur et la valeur pointée avec `&` et `*`.
 - [ ] Distinguer une erreur technique d’une [[06 - Erreurs métier|erreur métier]].
 - [ ] Dire quand utiliser `errors.Is` et quand utiliser `errors.As`.
 

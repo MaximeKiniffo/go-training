@@ -12,9 +12,13 @@ risquent de revenir. Une erreur comprise devient un point de révision, pas un �
 
 ## Pointeurs
 
-- `&value` prend l’adresse ; `*pointer` lit ou modifie la valeur visée.
+- `&value` prend l'adresse ; `*pointer` lit ou modifie la valeur visée.
 - Une fonction reçoit toujours une valeur. Si cette valeur est un pointeur, elle peut
-  viser la donnée de l’appelant.
+  viser la donnée de l'appelant.
+- Ne pas confondre le pointeur avec la valeur pointée : un pointeur conserve une
+  adresse, tandis que `*pointer` permet d'accéder à la valeur située à cette adresse.
+- Un entier passé par valeur est copié ; il faut retourner la nouvelle valeur ou
+  transmettre un pointeur si la fonction doit modifier l'entier de l'appelant.
 - Vérifier un pointeur optionnel avant de le déréférencer.
 
 ## Slices

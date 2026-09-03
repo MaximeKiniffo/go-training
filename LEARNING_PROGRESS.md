@@ -169,10 +169,11 @@ Débutant — phase 6 en cours.
 
 - La commande `go` n'était pas disponible dans une fenêtre PowerShell ouverte avant la mise à jour du `PATH`. Résolu en ouvrant une nouvelle fenêtre.
 - Difficulté importante pendant l'exercice de propagation d'erreurs : l'énoncé a d'abord été mal lu, ce qui a inversé le rôle de la chaîne d'entrée et du nombre converti (`string`/`int`). Le suivi du cheminement de `err` et des branches de l'algorithme a ensuite nécessité plusieurs indices.
+- Pendant l'exercice complémentaire sur les pointeurs, confusion initiale entre l'adresse mémoire, le pointeur et la valeur pointée. La distinction a été comprise en suivant `&quota`, le pointeur transmis à la fonction et `(*quota).Used++`.
 
 ## Erreurs récurrentes
 
-Aucune pour le moment.
+- Confondre une adresse mémoire avec la valeur pointée : `&value` obtient un pointeur vers la valeur, tandis que `*pointer` permet d'accéder à cette valeur.
 
 ## Exercices terminés
 
@@ -220,6 +221,7 @@ Aucune pour le moment.
 - `fundamentals/36-errors-as/score_validation_details.go`, avec une erreur `ScoreRangeError` récupérée dans une chaîne d'erreurs grâce à `errors.As` afin de distinguer un score trop bas d'un score trop haut.
 - `fundamentals/37-error-propagation/score_propagation.go`, avec la propagation d'une erreur de conversion à travers une fonction intermédiaire jusqu'à `main`.
 - `exercises/01-error-propagation-report/response_report.go`, avec la propagation d'une erreur lorsqu'une liste de mesures est vide, à travers une fonction intermédiaire jusqu'à la fonction d'affichage.
+- `exercises/02-pointers-memory-address/quota.go`, avec la modification d'une structure et d'un compteur transmis par pointeurs, ainsi que l'observation de la même adresse mémoire avant et après les appels.
 
 ## Planning des mini-projets
 
