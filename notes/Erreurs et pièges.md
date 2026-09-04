@@ -26,6 +26,13 @@ risquent de revenir. Une erreur comprise devient un point de révision, pas un �
 - `append` retourne la slice à conserver.
 - Une affectation de slice ne garantit pas une copie indépendante.
 
+## Erreurs métier
+
+- Pour distinguer une demande invalide d'un manque de disponibilité, vérifier d'abord
+  la valeur demandée, puis la comparer à l'état disponible.
+- En cas d'erreur, retourner l'état initial avec l'erreur ; ne pas fabriquer un nouvel
+  état qui n'a pas été appliqué.
+
 ## À enrichir
 
 Ajouter ici uniquement les erreurs qui se répètent ou qui ont demandé une explication.

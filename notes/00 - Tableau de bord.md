@@ -4,11 +4,11 @@
 
 Débutant avancé : phase 6, gestion des erreurs.
 
-Dernière notion acquise : [[06 - Propagation des erreurs|Propagation des erreurs]].
+Dernière notion acquise : [[06 - Erreurs métier|Erreurs métier]].
 
 Dernier renforcement : [[05 - Adresse mémoire et opérateurs de pointeur|pointeurs et adresse mémoire]] avec l'exercice `quota.go`.
 
-Notion en cours : [[06 - Erreurs métier|Erreurs métier]] — l'exercice n'est pas encore terminé.
+Notion en cours : les erreurs HTTP (prochaine étape de la phase 6).
 
 ## Parcours
 

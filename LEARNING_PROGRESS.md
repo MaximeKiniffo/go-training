@@ -74,7 +74,7 @@ Débutant — phase 6 en cours.
 - [x] `errors.Is` — vérifier si une erreur correspond à une erreur d'origine, même lorsqu'elle est enveloppée avec `%w`.
 - [x] `errors.As` — récupérer une erreur d'un type précis dans une chaîne d'erreurs et utiliser ses données.
 - [x] Propagation d'erreurs — une fonction intermédiaire peut transmettre une erreur reçue à son appelant avec `return err`.
-- [ ] Erreurs métier.
+- [x] Erreurs métier — représenter une règle métier invalide avec une erreur nommée et laisser l'appelant choisir le comportement adapté.
 - [ ] Erreurs HTTP.
 
 ### Phase 7 — Tests
@@ -222,6 +222,7 @@ Débutant — phase 6 en cours.
 - `fundamentals/37-error-propagation/score_propagation.go`, avec la propagation d'une erreur de conversion à travers une fonction intermédiaire jusqu'à `main`.
 - `exercises/01-error-propagation-report/response_report.go`, avec la propagation d'une erreur lorsqu'une liste de mesures est vide, à travers une fonction intermédiaire jusqu'à la fonction d'affichage.
 - `exercises/02-pointers-memory-address/quota.go`, avec la modification d'une structure et d'un compteur transmis par pointeurs, ainsi que l'observation de la même adresse mémoire avant et après les appels.
+- `fundamentals/38-business-errors/seat_reservation.go`, avec deux erreurs métier nommées, la distinction avec `errors.Is` et la conservation du nombre de places en cas de refus.
 
 ## Planning des mini-projets
 
@@ -241,4 +242,4 @@ Règle de décision : lorsqu’un jalon est atteint, la section `Prochaine étap
 
 ## Prochaine étape
 
-Phase 6 — les erreurs métier : représenter une situation métier invalide avec une erreur explicite.
+Phase 6 — les erreurs HTTP.

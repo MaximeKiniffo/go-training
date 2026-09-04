@@ -10,7 +10,7 @@ L’appelant vérifie cette valeur et décide quoi faire.
 - [[06 - errors.Is|errors.Is]]
 - [[06 - errors.As|errors.As]]
 - [[06 - Propagation des erreurs|Propagation des erreurs]]
-- [[06 - Erreurs métier|Erreurs métier]] — en cours
+- [[06 - Erreurs métier|Erreurs métier]]
 
 ## Réflexe général
 

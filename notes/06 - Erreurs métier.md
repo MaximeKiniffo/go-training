@@ -1,7 +1,6 @@
 # Erreurs métier
 
-> Statut : **notion en cours**. Cette fiche résume le but de la notion sans fournir
-> la solution de l’exercice actuel.
+> Statut : **notion acquise** après l'exercice de réservation de places.
 
 ## Définition
 
@@ -26,10 +25,31 @@ Exemples :
 ## Pourquoi une erreur explicite ?
 
 Une erreur métier peut transporter les informations utiles à la décision : valeur
-demandée, limite, identifiant concerné ou règle violée. L’appelant peut ensuite
+demandée, limite, identifiant concerné ou règle violée. L'appelant peut ensuite
 présenter un message adapté ou adopter un comportement spécifique.
 
-## Question de contrôle
+## Mise en œuvre retenue
 
-Quelle règle concrète le programme de réservation doit-il protéger, et quelles
-informations l’appelant doit-il connaître lorsque cette règle est refusée ?
+- Une erreur sentinelle nommée représente chaque règle métier refusée.
+- `errors.Is` permet de reconnaître la règle concernée sans comparer le texte du message.
+- La fonction métier retourne le nouvel état avec l'erreur.
+- En cas d'échec, elle retourne l'état initial afin de ne pas présenter une modification
+  qui n'a pas eu lieu.
+- Le code appelant transforme l'erreur interne en message destiné à l'utilisateur.
+
+## Pièges
+
+- Ne pas confondre une demande invalide avec une disponibilité insuffisante.
+- Vérifier la quantité demandée pour valider la demande ; la disponibilité sert à
+  vérifier si la réservation peut ensuite être effectuée.
+- Ne pas utiliser `err.Error()` comme identifiant d'une situation métier.
+
+## Exercice associé
+
+[seat_reservation.go](../fundamentals/38-business-errors/seat_reservation.go) — réservation
+acceptée, demande invalide et places insuffisantes.
+
+## Questions de révision
+
+1. Quelle différence fais-tu entre une demande invalide et une disponibilité insuffisante ?
+2. Pourquoi retourner le nombre initial de places avec une erreur ?

@@ -180,6 +180,8 @@ le code correspondant à une fiche de notion.
 
 [response_report.go](../exercises/01-error-propagation-report/response_report.go) — erreur lorsqu’une liste de mesures est vide.
 
-## En cours
+### 38 — Erreurs métier
 
-- [[06 - Erreurs métier|Erreurs métier]] : [ticket_reservation.go](../fundamentals/38-business-errors/ticket_reservation.go). Ne pas considérer cet exercice comme terminé.
+[seat_reservation.go](../fundamentals/38-business-errors/seat_reservation.go) — deux erreurs
+métier nommées, distinction avec `errors.Is`, retour du nouvel état et conservation de
+l'état initial en cas de refus.

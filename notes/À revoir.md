@@ -2,9 +2,9 @@
 
 ## Priorité actuelle
 
-- [ ] Distinguer une adresse, un pointeur et la valeur pointée avec `&` et `*`.
-- [ ] Distinguer une erreur technique d’une [[06 - Erreurs métier|erreur métier]].
+- [ ] Revoir les erreurs métier : conserver l'état initial en cas d'échec.
 - [ ] Dire quand utiliser `errors.Is` et quand utiliser `errors.As`.
+- [ ] Distinguer une adresse, un pointeur et la valeur pointée avec `&` et `*`.
 
 ## Révision espacée
 
