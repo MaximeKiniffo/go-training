@@ -1,5 +1,7 @@
 # Phase 6 — Gestion des erreurs
 
+> Statut : **phase terminée** après l'exercice sur les erreurs métier.
+
 En Go, une erreur est une valeur qui accompagne le résultat normal d’une fonction.
 L’appelant vérifie cette valeur et décide quoi faire.
 
@@ -11,6 +13,9 @@ L’appelant vérifie cette valeur et décide quoi faire.
 - [[06 - errors.As|errors.As]]
 - [[06 - Propagation des erreurs|Propagation des erreurs]]
 - [[06 - Erreurs métier|Erreurs métier]]
+
+Les erreurs HTTP ne font pas partie de cette phase : elles traduisent une erreur Go
+en réponse de transport et seront étudiées après les bases de `net/http`.
 
 ## Réflexe général
 

@@ -2,13 +2,14 @@
 
 ## Niveau actuel
 
-Débutant avancé : phase 6, gestion des erreurs.
+Débutant avancé : phase 6 terminée, phase 7 à commencer.
 
 Dernière notion acquise : [[06 - Erreurs métier|Erreurs métier]].
 
 Dernier renforcement : [[05 - Adresse mémoire et opérateurs de pointeur|pointeurs et adresse mémoire]] avec l'exercice `quota.go`.
 
-Notion en cours : les erreurs HTTP (prochaine étape de la phase 6).
+Notion en cours : le package `testing` et un premier test unitaire (prochaine étape
+de la phase 7).
 
 ## Parcours
 
@@ -18,6 +19,9 @@ Notion en cours : les erreurs HTTP (prochaine étape de la phase 6).
 - [[04 - Méthodes et abstraction]]
 - [[05 - Pointeurs et mémoire]]
 - [[06 - Gestion des erreurs]]
+
+Prochaine phase : tests. Les erreurs HTTP seront abordées pendant la phase HTTP,
+après les handlers et les codes de statut.
 
 ## Pour réviser efficacement
 

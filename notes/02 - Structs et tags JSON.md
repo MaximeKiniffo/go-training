@@ -17,6 +17,10 @@ forme est connue.
 
 ## Tags JSON
 
+> La syntaxe a été observée avec les structs dans l'ancien ordre du programme. Son
+> utilisation concrète sera consolidée en phase 8A, après l'introduction de
+> `encoding/json`.
+
 ```go
 type Developer struct {
 	Name string `json:"name"`

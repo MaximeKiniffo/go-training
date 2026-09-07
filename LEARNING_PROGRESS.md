@@ -2,7 +2,7 @@
 
 ## Niveau actuel
 
-Débutant — phase 6 en cours.
+Débutant avancé — phase 6 terminée, phase 7 à commencer.
 
 ## Notions étudiées
 
@@ -34,7 +34,6 @@ Débutant — phase 6 en cours.
 - [x] Maps.
 - [x] Boucles avec `range`.
 - [x] Structs.
-- [x] Tags JSON.
 
 ### Phase 3 — Organisation du code
 
@@ -50,7 +49,6 @@ Débutant — phase 6 en cours.
 
 - [x] Méthodes.
 - [x] Receivers par valeur — une méthode reçoit une copie de la struct et ne modifie donc pas la valeur d'origine.
-- [x] Receivers par pointeur — une méthode recevant un pointeur peut modifier la struct d'origine.
 - [x] Composition.
 - [x] Interfaces.
 - [x] Interfaces implicites — un type satisfait automatiquement une interface lorsqu'il possède toutes les méthodes attendues avec les signatures exactes.
@@ -62,6 +60,7 @@ Débutant — phase 6 en cours.
 - [x] Opérateurs `&` et `*` — `&` obtient l'adresse d'une variable et `*` permet de lire ou modifier la valeur visée par un pointeur.
 - [x] Passage par valeur — une fonction reçoit une copie d'une valeur et la modification de cette copie ne modifie pas la variable originale.
 - [x] Modification d'une struct — une struct passée par valeur est copiée ; un pointeur permet de modifier la struct originale.
+- [x] Receivers par pointeur — une méthode recevant un pointeur peut modifier la struct d'origine ; cette notion est désormais classée après les bases des pointeurs.
 - [x] Pointeurs optionnels — un pointeur permet de représenter une valeur qui peut être absente.
 - [x] Valeurs `nil` — `nil` indique qu'un pointeur ne référence aucune valeur et doit être vérifié avant déréférencement.
 
@@ -70,67 +69,88 @@ Débutant — phase 6 en cours.
 - [x] Type `error` — une fonction peut retourner une erreur comme valeur, et l'appelant la vérifie avec `err != nil`.
 - [x] `errors.New` — création d'une erreur simple avec un message et vérification de la valeur retournée avec `err != nil`.
 - [x] `fmt.Errorf` — création d'une erreur dont le message contient une valeur dynamique.
+- [x] Propagation d'erreurs — une fonction intermédiaire peut transmettre une erreur reçue à son appelant avec `return err`.
 - [x] `%w` — contextualiser une erreur avec `fmt.Errorf` tout en conservant l'erreur d'origine.
 - [x] `errors.Is` — vérifier si une erreur correspond à une erreur d'origine, même lorsqu'elle est enveloppée avec `%w`.
+- [x] Types d'erreurs personnalisés — une struct qui implémente `Error() string` peut transporter des informations structurées sur l'échec.
 - [x] `errors.As` — récupérer une erreur d'un type précis dans une chaîne d'erreurs et utiliser ses données.
-- [x] Propagation d'erreurs — une fonction intermédiaire peut transmettre une erreur reçue à son appelant avec `return err`.
 - [x] Erreurs métier — représenter une règle métier invalide avec une erreur nommée et laisser l'appelant choisir le comportement adapté.
-- [ ] Erreurs HTTP.
 
 ### Phase 7 — Tests
 
 - [ ] Package `testing`.
+- [ ] Conventions des fichiers `*_test.go` et des fonctions `TestXxx`.
+- [ ] Commandes `go test`, `go test ./...` et `go test -v`.
 - [ ] Premiers tests unitaires.
-- [ ] Tests pilotés par tableaux.
-- [ ] Sous-tests avec `t.Run`.
-- [ ] Couverture.
 - [ ] Tests des cas d'erreur.
-- [ ] Commandes `go test` et `go test ./...`.
+- [ ] Sous-tests avec `t.Run`.
+- [ ] Tests pilotés par tableaux.
+- [ ] Couverture.
+- [ ] Lecture et diagnostic d'un test qui échoue.
 
-### Phase 8 — JSON, fichiers et HTTP
+### Phase 8 — Fichiers, JSON et HTTP
 
+#### Phase 8A — Ressources, fichiers et JSON
+
+- [ ] `defer` pour libérer une ressource.
 - [ ] Lecture et écriture de fichiers.
-- [ ] Encodage et décodage JSON.
+- [ ] Encodage et décodage avec `encoding/json`.
+- [x] Syntaxe des tags JSON — étudiée auparavant avec les structs ; l'utilisation concrète pendant l'encodage et le décodage reste à consolider dans cette phase.
+- [ ] Propagation des erreurs de fichier et de JSON.
+
+#### Phase 8B — Serveur HTTP
+
+- [ ] Modèle requête/réponse HTTP.
 - [ ] `net/http`.
-- [ ] Création d'un serveur.
-- [ ] Handlers.
+- [ ] Création et arrêt manuel d'un serveur minimal.
+- [ ] Handlers et `http.ResponseWriter`.
 - [ ] Routes.
-- [ ] Paramètres.
+- [ ] Méthodes HTTP.
+- [ ] Paramètres de chemin.
 - [ ] Query parameters.
+- [ ] Lecture d'un corps de requête.
 - [ ] Codes HTTP.
 - [ ] Headers.
+- [ ] Réponses JSON.
+
+#### Phase 8C — Robustesse HTTP
+
+- [ ] Traduction des erreurs métier et techniques en réponses HTTP.
+- [ ] Messages publics sans fuite de détails techniques.
 - [ ] Middlewares simples.
+- [ ] Tests de handlers avec `httptest`.
 - [ ] Clients HTTP.
-- [ ] Timeouts.
-- [ ] Contexte.
+- [ ] Timeouts du client HTTP.
+- [ ] Introduction à `context.Context` avec une requête HTTP et son annulation.
 
 ### Phase 9 — Base de données
 
 - [ ] SQL avec Go.
 - [ ] Package `database/sql`.
-- [ ] Connexion.
-- [ ] Requêtes.
-- [ ] Paramètres.
+- [ ] Rôle du driver de base de données.
+- [ ] Connexion et configuration du pool.
+- [ ] Migrations.
+- [ ] Requêtes paramétrées.
 - [ ] `Scan`.
+- [ ] `QueryContext` et `ExecContext`.
+- [ ] Gestion des erreurs SQL, notamment l'absence de ligne.
 - [ ] Transactions.
 - [ ] Repository.
-- [ ] Migrations.
-- [ ] Gestion des erreurs SQL.
 
 ### Phase 10 — Concurrence
 
 - [ ] Différence entre concurrence et parallélisme.
 - [ ] Goroutines.
+- [ ] `sync.WaitGroup`.
 - [ ] Channels.
 - [ ] Channels bufferisés.
 - [ ] `select`.
-- [ ] `sync.WaitGroup`.
-- [ ] Mutex.
 - [ ] Race conditions.
 - [ ] Race detector.
+- [ ] Mutex.
 - [ ] Annulation.
 - [ ] Timeouts.
-- [ ] `context.Context`.
+- [ ] Approfondissement de `context.Context` pour coordonner plusieurs opérations concurrentes.
 
 ### Phase 11 — Service backend complet
 
@@ -156,8 +176,8 @@ Débutant — phase 6 en cours.
 - [ ] Timeouts.
 - [ ] Propagation du contexte.
 - [ ] Erreurs réseau.
-- [ ] Retries.
 - [ ] Idempotence.
+- [ ] Retries appliqués seulement aux opérations qui peuvent être rejouées sans danger.
 - [ ] Base de données par service.
 - [ ] Événements.
 - [ ] Communication asynchrone.
@@ -224,10 +244,21 @@ Débutant — phase 6 en cours.
 - `exercises/02-pointers-memory-address/quota.go`, avec la modification d'une structure et d'un compteur transmis par pointeurs, ainsi que l'observation de la même adresse mémoire avant et après les appels.
 - `fundamentals/38-business-errors/seat_reservation.go`, avec deux erreurs métier nommées, la distinction avec `errors.Is` et la conservation du nombre de places en cas de refus.
 
+## Corrections de l'ordre pédagogique
+
+- Les erreurs HTTP ont été déplacées de la phase 6 vers la phase 8C : elles
+  nécessitent d'abord les handlers, `http.ResponseWriter` et les codes HTTP.
+- Les receivers par pointeur sont désormais classés après les bases des pointeurs.
+  L'exercice 21 reste dans l'historique à son emplacement d'origine.
+- Les tags JSON sont désormais rattachés à la phase 8A. Leur syntaxe a déjà été
+  travaillée, mais leur utilité sera consolidée avec `encoding/json`.
+- `context.Context` est introduit avec HTTP avant la base de données, puis approfondi
+  pendant la phase de concurrence.
+
 ## Planning des mini-projets
 
 - [ ] Après la phase 7 : démarrer le projet 1, programme en ligne de commande en mémoire, dans `mini-projects/`.
-- [ ] Après la phase 8 : terminer le projet 1 avec la persistance dans un fichier JSON.
+- [ ] Après la phase 8A : terminer le projet 1 avec la persistance dans un fichier JSON.
 - [ ] Phase 11 : réaliser le projet 2, API REST monolithique, dans `services/`.
 - [ ] Phase 12, après les appels HTTP inter-services : démarrer le projet 3, deux services.
 - [ ] Phase 12, après les événements et la communication asynchrone : démarrer le projet 4, service de notification.
@@ -242,4 +273,4 @@ Règle de décision : lorsqu’un jalon est atteint, la section `Prochaine étap
 
 ## Prochaine étape
 
-Phase 6 — les erreurs HTTP.
+Phase 7 — le package `testing` et un premier test unitaire.
