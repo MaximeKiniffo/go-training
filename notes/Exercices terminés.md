@@ -191,3 +191,7 @@ l'état initial en cas de refus.
 ### 39 — Premier test unitaire
 
 [seat_availability.go](../fundamentals/39-first-tests/seat_availability.go) et [seat_availability_test.go](../fundamentals/39-first-tests/seat_availability_test.go) — vérification automatisée d'une règle de disponibilité avec le package `testing`.
+
+### Commandes de test
+
+Exécution validée de `go test -v` dans `fundamentals/39-first-tests/` et de `go test ./...` à la racine du module, avec lecture de `PASS`, `ok` et `[no test files]`.

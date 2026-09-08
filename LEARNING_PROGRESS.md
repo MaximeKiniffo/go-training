@@ -81,7 +81,7 @@ Débutant avancé — phase 7 en cours.
 - [x] Package `testing`.
 - [x] Conventions des fichiers `*_test.go` et des fonctions `TestXxx`.
 - [x] Commande `go test`.
-- [ ] Commandes `go test ./...` et `go test -v`.
+- [x] Commandes `go test ./...` et `go test -v`.
 - [x] Premiers tests unitaires.
 - [ ] Tests des cas d'erreur.
 - [ ] Sous-tests avec `t.Run`.
@@ -275,4 +275,4 @@ Règle de décision : lorsqu’un jalon est atteint, la section `Prochaine étap
 
 ## Prochaine étape
 
-Phase 7 — exécuter les tests du module avec `go test ./...` et `go test -v`, puis lire leurs sorties.
+Phase 7 — tester les cas d'erreur avec le package `testing`.

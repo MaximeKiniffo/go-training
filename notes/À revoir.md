@@ -2,7 +2,7 @@
 
 ## Priorité actuelle
 
-- [ ] Retenir les conventions : fichier `*_test.go` et fonction `TestXxx`.
+- [ ] Distinguer `go test -v` (package courant, sorties détaillées) et `go test ./...` (tous les packages du module).
 - [ ] Dire quand utiliser `errors.Is` et quand utiliser `errors.As`.
 - [ ] Distinguer une adresse, un pointeur et la valeur pointée avec `&` et `*`.
 

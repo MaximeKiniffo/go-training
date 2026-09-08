@@ -7,6 +7,8 @@
 - Une fonction de test commence par `Test` et reçoit `t *testing.T`.
 - Lorsque la valeur obtenue ne correspond pas à la valeur attendue, `t.Errorf` signale l'échec du test.
 - La commande `go test` compile le package courant et exécute ses tests.
+- `go test -v` affiche le nom de chaque test exécuté et son résultat détaillé.
+- `go test ./...` parcourt tous les packages du module ; `[no test files]` indique simplement qu'un package ne contient pas de test.
 
 ## Exemple étudié
 
@@ -22,3 +24,4 @@ Fichiers associés :
 - Un fichier de test mal nommé, par exemple sans le suffixe `_test.go`, n'est pas exécuté par `go test`.
 - Une fonction qui ne commence pas par `Test` n'est pas reconnue comme un test.
 - Le test doit comparer le résultat obtenu avec le résultat attendu : un test qui appelle une fonction sans vérifier son résultat ne protège pas le comportement.
+- Ne pas interpréter `[no test files]` comme un échec : cette ligne signale l'absence de fichier `*_test.go` dans le package concerné.

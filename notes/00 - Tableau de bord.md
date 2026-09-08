@@ -4,12 +4,11 @@
 
 Débutant avancé : phase 7 en cours.
 
-Dernière notion acquise : [[07 - Package testing et premier test unitaire|Package `testing` et premier test unitaire]].
+Dernière notion acquise : [[07 - Package testing et premier test unitaire|exécution et lecture des tests avec `go test -v` et `go test ./...`]].
 
 Dernier renforcement : [[05 - Adresse mémoire et opérateurs de pointeur|pointeurs et adresse mémoire]] avec l'exercice `quota.go`.
 
-Notion en cours : exécuter les tests du module avec `go test ./...` et `go test -v`,
-puis lire leurs sorties.
+Notion en cours : tests des cas d'erreur avec le package `testing`.
 
 ## Parcours
 
@@ -33,8 +32,8 @@ après les handlers et les codes de statut.
 
 ## À retenir maintenant
 
-Un test Go est une fonction `TestXxx` placée dans un fichier `*_test.go`. `go test`
-compile le package et exécute ses tests.
+`go test -v` rend visibles les tests exécutés dans le package courant. `go test ./...`
+vérifie récursivement tous les packages du module ; `[no test files]` n'est pas un échec.
 
 ## Liens utiles
 
