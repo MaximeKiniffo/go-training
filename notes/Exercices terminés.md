@@ -185,3 +185,9 @@ le code correspondant à une fiche de notion.
 [seat_reservation.go](../fundamentals/38-business-errors/seat_reservation.go) — deux erreurs
 métier nommées, distinction avec `errors.Is`, retour du nouvel état et conservation de
 l'état initial en cas de refus.
+
+## Phase 7 — Tests
+
+### 39 — Premier test unitaire
+
+[seat_availability.go](../fundamentals/39-first-tests/seat_availability.go) et [seat_availability_test.go](../fundamentals/39-first-tests/seat_availability_test.go) — vérification automatisée d'une règle de disponibilité avec le package `testing`.

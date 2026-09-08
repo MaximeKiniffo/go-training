@@ -2,14 +2,14 @@
 
 ## Niveau actuel
 
-Débutant avancé : phase 6 terminée, phase 7 à commencer.
+Débutant avancé : phase 7 en cours.
 
-Dernière notion acquise : [[06 - Erreurs métier|Erreurs métier]].
+Dernière notion acquise : [[07 - Package testing et premier test unitaire|Package `testing` et premier test unitaire]].
 
 Dernier renforcement : [[05 - Adresse mémoire et opérateurs de pointeur|pointeurs et adresse mémoire]] avec l'exercice `quota.go`.
 
-Notion en cours : le package `testing` et un premier test unitaire (prochaine étape
-de la phase 7).
+Notion en cours : exécuter les tests du module avec `go test ./...` et `go test -v`,
+puis lire leurs sorties.
 
 ## Parcours
 
@@ -19,8 +19,9 @@ de la phase 7).
 - [[04 - Méthodes et abstraction]]
 - [[05 - Pointeurs et mémoire]]
 - [[06 - Gestion des erreurs]]
+- [[07 - Package testing et premier test unitaire]]
 
-Prochaine phase : tests. Les erreurs HTTP seront abordées pendant la phase HTTP,
+Phase en cours : tests. Les erreurs HTTP seront abordées pendant la phase HTTP,
 après les handlers et les codes de statut.
 
 ## Pour réviser efficacement
@@ -32,8 +33,8 @@ après les handlers et les codes de statut.
 
 ## À retenir maintenant
 
-En Go, les erreurs sont des valeurs retournées. L’appelant décide explicitement quoi
-faire lorsque `err != nil`.
+Un test Go est une fonction `TestXxx` placée dans un fichier `*_test.go`. `go test`
+compile le package et exécute ses tests.
 
 ## Liens utiles
 

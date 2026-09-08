@@ -2,7 +2,7 @@
 
 ## Niveau actuel
 
-Débutant avancé — phase 6 terminée, phase 7 à commencer.
+Débutant avancé — phase 7 en cours.
 
 ## Notions étudiées
 
@@ -78,10 +78,11 @@ Débutant avancé — phase 6 terminée, phase 7 à commencer.
 
 ### Phase 7 — Tests
 
-- [ ] Package `testing`.
-- [ ] Conventions des fichiers `*_test.go` et des fonctions `TestXxx`.
-- [ ] Commandes `go test`, `go test ./...` et `go test -v`.
-- [ ] Premiers tests unitaires.
+- [x] Package `testing`.
+- [x] Conventions des fichiers `*_test.go` et des fonctions `TestXxx`.
+- [x] Commande `go test`.
+- [ ] Commandes `go test ./...` et `go test -v`.
+- [x] Premiers tests unitaires.
 - [ ] Tests des cas d'erreur.
 - [ ] Sous-tests avec `t.Run`.
 - [ ] Tests pilotés par tableaux.
@@ -243,6 +244,7 @@ Débutant avancé — phase 6 terminée, phase 7 à commencer.
 - `exercises/01-error-propagation-report/response_report.go`, avec la propagation d'une erreur lorsqu'une liste de mesures est vide, à travers une fonction intermédiaire jusqu'à la fonction d'affichage.
 - `exercises/02-pointers-memory-address/quota.go`, avec la modification d'une structure et d'un compteur transmis par pointeurs, ainsi que l'observation de la même adresse mémoire avant et après les appels.
 - `fundamentals/38-business-errors/seat_reservation.go`, avec deux erreurs métier nommées, la distinction avec `errors.Is` et la conservation du nombre de places en cas de refus.
+- `fundamentals/39-first-tests/seat_availability.go` et `seat_availability_test.go`, avec une règle de disponibilité et son premier test unitaire exécuté avec `go test`.
 
 ## Corrections de l'ordre pédagogique
 
@@ -273,4 +275,4 @@ Règle de décision : lorsqu’un jalon est atteint, la section `Prochaine étap
 
 ## Prochaine étape
 
-Phase 7 — le package `testing` et un premier test unitaire.
+Phase 7 — exécuter les tests du module avec `go test ./...` et `go test -v`, puis lire leurs sorties.

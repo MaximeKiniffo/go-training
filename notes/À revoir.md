@@ -2,7 +2,7 @@
 
 ## Priorité actuelle
 
-- [ ] Revoir les erreurs métier : conserver l'état initial en cas d'échec.
+- [ ] Retenir les conventions : fichier `*_test.go` et fonction `TestXxx`.
 - [ ] Dire quand utiliser `errors.Is` et quand utiliser `errors.As`.
 - [ ] Distinguer une adresse, un pointeur et la valeur pointée avec `&` et `*`.
 
