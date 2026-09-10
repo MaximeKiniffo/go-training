@@ -192,6 +192,10 @@ l'état initial en cas de refus.
 
 [seat_availability.go](../fundamentals/39-first-tests/seat_availability.go) et [seat_availability_test.go](../fundamentals/39-first-tests/seat_availability_test.go) — vérification automatisée d'une règle de disponibilité avec le package `testing`.
 
+### 40 — Tests des cas d’erreur
+
+[reservation_validation.go](../fundamentals/40-error-tests/reservation_validation.go) et [reservation_validation_test.go](../fundamentals/40-error-tests/reservation_validation_test.go) — cas valide vérifié avec `err == nil` et deux erreurs métier vérifiées avec `errors.Is`.
+
 ### Commandes de test
 
 Exécution validée de `go test -v` dans `fundamentals/39-first-tests/` et de `go test ./...` à la racine du module, avec lecture de `PASS`, `ok` et `[no test files]`.

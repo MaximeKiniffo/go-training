@@ -4,11 +4,11 @@
 
 Débutant avancé : phase 7 en cours.
 
-Dernière notion acquise : [[07 - Package testing et premier test unitaire|exécution et lecture des tests avec `go test -v` et `go test ./...`]].
+Dernière notion acquise : [[07 - Package testing et premier test unitaire|tests des cas d’erreur avec `errors.Is`]].
 
 Dernier renforcement : [[05 - Adresse mémoire et opérateurs de pointeur|pointeurs et adresse mémoire]] avec l'exercice `quota.go`.
 
-Notion en cours : tests des cas d'erreur avec le package `testing`.
+Notion à venir : sous-tests avec `t.Run`.
 
 ## Parcours
 

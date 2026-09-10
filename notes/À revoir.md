@@ -2,7 +2,7 @@
 
 ## Priorité actuelle
 
-- [ ] Distinguer `go test -v` (package courant, sorties détaillées) et `go test ./...` (tous les packages du module).
+- [ ] Dans un test, vérifier `err == nil` pour le cas valide et `errors.Is` pour une erreur métier attendue.
 - [ ] Dire quand utiliser `errors.Is` et quand utiliser `errors.As`.
 - [ ] Distinguer une adresse, un pointeur et la valeur pointée avec `&` et `*`.
 
